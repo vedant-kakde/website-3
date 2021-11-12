@@ -7,6 +7,12 @@ title: Introduction
   export const prerender = true;
 </script>
 
+<script lang="ts">
+  import GetStarted from "../../components/docs/landing-page/get-started.svelte";
+</script>
+
+<GetStarted />
+
 # Introduction to Gitpod
 
 [Gitpod](/) is a container-based development platform that puts developer experience first. Gitpod provisions **ready-to-code developer environments** in the cloud accessible through your browser (on your computer or tablet) and [your local IDE](/blog/local-app).
