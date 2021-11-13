@@ -3,7 +3,7 @@
   import { getStartedItems } from "./get-started";
 </script>
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-2 mb-16">
   {#each getStartedItems as item}
     <GetStartedItem getStartedItem={item} />
   {/each}

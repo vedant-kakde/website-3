@@ -16,7 +16,7 @@
   <div
     class="flex-shrink-0 w-8 h-8 rounded-full bg-sand-dark inline-flex items-center justify-center text-white relative z-10"
   />
-  <div class="flex-grow pl-4">
+  <div class="flex-grow pl-4 md:h-36">
     <div class="mb-2">
       {formattedDate}
     </div>
