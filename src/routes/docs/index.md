@@ -4,14 +4,23 @@ title: Introduction
 ---
 
 <script context="module">
+  import {changelogEntriesStore} from "../../stores/changelog"
   export const prerender = true;
+   export async function load({ session }) {
+    const changelogEntries = session.changelogEntries;
+    changelogEntriesStore.set(changelogEntries)
+    return { props: { changelogEntries } };
+  }
 </script>
 
 <script lang="ts">
   import GetStarted from "../../components/docs/landing-page/get-started.svelte";
+  import Timeline from "../../components/docs/landing-page/timeline/timeline.svelte";
+
 </script>
 
 <GetStarted />
+<Timeline />
 
 # Introduction to Gitpod
 
