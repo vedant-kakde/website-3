@@ -4,23 +4,19 @@
 </script>
 
 <div class="flex relative pb-12 ">
-  <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-    <div class="h-full w-1 bg-dark-grey pointer-events-none" />
+  <div class="h-full w-8 absolute inset-0 flex items-center justify-center">
+    <div class="h-full w-1 bg-sand-dark pointer-events-none" />
   </div>
   <div
-    class="flex-shrink-0 w-10 h-10 rounded-full bg-gitpod-kumquat-gradient inline-flex items-center justify-center text-white relative z-10"
+    class="flex-shrink-0 w-8 h-8 rounded-full bg-sand-dark inline-flex items-center justify-center text-white relative z-10"
   />
   <div class="flex-grow pl-4">
-    <h2
-      class="font-medium title-font text-base text-gray-900 mb-1 tracking-wider"
+    <h3
+      class="font-medium title-font text-base text-gray-900 mb-1 tracking-wider text-p-medium"
     >
-      <h6>
-        {title}
-      </h6>
-    </h2>
-    <p
-      class="rounded-2xl leading-relaxed h-40 overflow-hidden overflow-ellipsis"
-    >
+      {title}
+    </h3>
+    <p class="rounded-2xl leading-relaxed">
       {@html body}
     </p>
   </div>
