@@ -8,15 +8,8 @@
   export let imagesDirectoryName: string;
   export let norobots: boolean = false;
 
-  const {
-    date,
-    author,
-    slug,
-    title,
-    image,
-    teaserImage,
-    excerpt,
-  } = $$restProps;
+  const { date, author, slug, title, image, teaserImage, excerpt } =
+    $$restProps;
 
   let dateDisplay = new Date(Date.parse(date)).toLocaleDateString(undefined, {
     year: "numeric",
@@ -35,7 +28,7 @@
   const hasATwitterProfile = (author: string) =>
     !!authors[author].socialProfiles.twitter;
 
-  const writers = author.split(", ");
+  const writers = author.split(",").map((a: string) => a.trim());
 
   const renderTwitterHandles = () => {
     let result = writers.reduce(
