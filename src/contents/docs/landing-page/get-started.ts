@@ -18,7 +18,7 @@ export const getStartedItems: GetStartedItem[] = [
   {
     buttonLabel: "Start exploring",
     description: "Learn about Gitpod by opening a template",
-    icon: "/svg/docs/landing-page/docs.svg",
+    icon: "/svg/docs/landing-page/quickstart.svg",
     path: "/docs/quickstart",
     title: "Use Quickstart",
   },

@@ -3,20 +3,21 @@ section:
 title: Introduction
 ---
 
-<script context="module">
-  import {changelogEntriesStore} from "../../stores/changelog"
+<script lang="ts" context="module">
   export const prerender = true;
-   export async function load({ session }) {
-    const changelogEntries = session.changelogEntries;
-    changelogEntriesStore.set(changelogEntries)
-    return { props: { changelogEntries } };
+  export async function load({ session }) {
+    return { props: { changelogEntries: session.changelogEntries } };
   }
 </script>
 
 <script lang="ts">
+  import { setContext } from "svelte";
   import GetStarted from "../../components/docs/landing-page/get-started.svelte";
-  import Timeline from "../../components/docs/landing-page/timeline/timeline.svelte";
+  import Timeline, { contextKeyChangelogEntries } from "../../components/docs/landing-page/timeline/timeline.svelte";
 
+  export let changelogEntries;
+
+  setContext(contextKeyChangelogEntries, changelogEntries);
 </script>
 
 # Welcome!
