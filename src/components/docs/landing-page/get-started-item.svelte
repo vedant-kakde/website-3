@@ -7,11 +7,7 @@
   class="text-center bg-off-white rounded-4xl shadow-normal p-8 flex flex-col"
 >
   <div class="flex justify-center">
-    <img
-      class="shadow-normal mt-4 mb-8"
-      src={getStartedItem.icon}
-      alt={getStartedItem.title}
-    />
+    <img src={getStartedItem.icon} alt={getStartedItem.title} />
   </div>
   <div class="flex flex-col">
     <h4 class="mt-4">{getStartedItem.title}</h4>
