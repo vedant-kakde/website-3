@@ -18,7 +18,7 @@
     <p class="mb-4">{getStartedItem.description}</p>
   </div>
   <div class="mt-auto">
-    <a class="btn-cta mb-2 " href={getStartedItem.path}
+    <a class="btn-cta mb-2" href={getStartedItem.path}
       >{getStartedItem.buttonLabel}</a
     >
   </div>
