@@ -1,4 +1,8 @@
-<script lang="ts">
+<script>
+  /**
+   * Typescript is not supported in mdsvex layout files.
+   * @see https://github.com/pngwn/MDsveX/issues/116
+   */
   import AnnouncementBanner from "./announcement-banner.svelte";
   import OpenGraph from "../open-graph.svelte";
   import FeedbackWidget from "./feedback-widget.svelte";
@@ -6,12 +10,17 @@
   import docsCurrentSectionStore from "../../stores/docs-current-section";
   import PrevNext from "./prev-next.svelte";
 
+  /** @type {string} */
   export let section;
+  /** @type {string} */
   export let title;
 
   $: $docsCurrentSectionStore = section;
 
-  const renderPageToc = (node: Element) => {
+  /**
+   * @param {HTMLElement} node
+   */
+  const renderPageToc = (node) => {
     node.appendChild(document.getElementsByClassName("toc")[0]);
   };
 </script>
