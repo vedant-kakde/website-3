@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import AnnouncementBanner from "./announcement-banner.svelte";
   import OpenGraph from "../open-graph.svelte";
   import FeedbackWidget from "./feedback-widget.svelte";
@@ -10,6 +10,10 @@
   export let title;
 
   $: $docsCurrentSectionStore = section;
+
+  const renderPageToc = (node: Element) => {
+    node.appendChild(document.getElementsByClassName("toc")[0]);
+  };
 </script>
 
 <svelte:head>
@@ -25,8 +29,15 @@
 />
 <AnnouncementBanner />
 <EditInGitpod />
-<div class="content-docs">
-  <slot />
+<div class="flex">
+  <div class="content-docs flex-auto">
+    <slot />
+  </div>
+  <div
+    use:renderPageToc
+    id="toc-wrapper"
+    class="hidden xl:block flex-none w-64 pl-8"
+  />
 </div>
 <FeedbackWidget type="docs" class="my-huge" />
 <PrevNext />

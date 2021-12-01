@@ -4,6 +4,7 @@ import headings from "remark-autolink-headings";
 import remarkExternalLinks from "remark-external-links";
 import slug from "remark-slug";
 import sveltePreprocess from "svelte-preprocess";
+import rehypeToc from "@jsdevtools/rehype-toc";
 import remarkSetImagePath from "./src/utils/remark-set-image-path.js";
 import remarkEmbedVideo from "./src/utils/remark-embed-video.js";
 import remarkLinkWithImageAsOnlyChild from "./src/utils/remark-link-with-image-as-only-child.js";
@@ -58,6 +59,14 @@ const config = {
         docs: "./src/components/docs/docs-content-layout.svelte",
         guides: "./src/components/guides/guides-content-layout.svelte",
       },
+      rehypePlugins: [
+        [
+          rehypeToc,
+          {
+            position: "beforebegin",
+          },
+        ],
+      ],
       remarkPlugins: [
         [
           remarkExternalLinks,
