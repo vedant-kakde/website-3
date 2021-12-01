@@ -4,7 +4,7 @@
   import LinkGitRepository from "./link-git-repository.svelte";
 </script>
 
-<style lang="scss">
+<style lang="postcss">
   .cards-container {
     display: flex;
     justify-content: space-between;
