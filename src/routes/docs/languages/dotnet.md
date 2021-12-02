@@ -51,7 +51,7 @@ Alternatively, you can also run your application in so-called watch-mode. In suc
 
 ## Useful VSCode Extensions
 
-### <p>C#</p>
+### C#
 
 The official C# extension from Microsoft [is proprietary](https://aka.ms/VSCode-DotNet-DbgLicense) and unfortunately cannot be used. The MIT licensed [muhammad-sammy.csharp](https://open-vsx.org/extension/muhammad-sammy/csharp) extension from Samsung brings code completion, snippets, auto-formatting, peek definition, refactoring, hover documentation and breakpoint debugging for C# however!
 
@@ -65,7 +65,7 @@ vscode:
     - muhammad-sammy.csharp
 ```
 
-### <p>F#</p>
+### F#
 
 The [Ionide-fsharp](https://ionide.io/) extensin gives F# developers the following features:
 

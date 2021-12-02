@@ -76,7 +76,7 @@ The Rust Test Explorer makes it easy to run Rust tests.
 ![A crates extension demo](.../../../static/images/docs/cratesDemo.gif)
 The VSCode extension Crates makes it easier to manage your Cargo dependency versions.
 
-### <p>Search Crates.io</p>
+### Search Crates.io
 
 ![An example of search crates.io extension](.../../../static/images/docs/searchCratesio.gif)
 
