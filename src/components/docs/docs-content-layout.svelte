@@ -39,7 +39,7 @@
 <AnnouncementBanner />
 <EditInGitpod />
 <div class="flex">
-  <div class="content-docs flex-auto">
+  <div class="content-docs flex-auto min-w-0">
     <slot />
   </div>
   <div
