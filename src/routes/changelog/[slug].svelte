@@ -3,6 +3,8 @@
   import type { ChangelogEntry as ChangelogEntryType } from "../../types/changelog-entry.type";
   import BackLink from "../../components/changelog/back-link.svelte";
 
+  export const prerender = true;
+
   export async function load({ page, session }) {
     const changelogEntry: ChangelogEntryType = session.changelogEntries.find(
       (entry: ChangelogEntryType) =>
