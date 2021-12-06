@@ -60,12 +60,13 @@ async function sendEmail(
 const handler: Handler = function (event, _, callback) {
   console.log(JSON.stringify(event.body));
   const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY || "no-key";
+  const SENDGRID_TO_EMAIL =
+    process.env.SENDGRID_TO_EMAIL || "contact-test@gitpod.io";
+
   const email: Email = JSON.parse(event.body!) as Email;
 
   email.to = {
-    email: email.to
-      ? email.to.email
-      : process.env.SENDGRID_TO_EMAIL || "contact-test@gitpod.io",
+    email: SENDGRID_TO_EMAIL,
     name: "Gitpod",
   };
 

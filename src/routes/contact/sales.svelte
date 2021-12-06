@@ -103,9 +103,6 @@
         email: formData.workEmail.value,
         name: formData.name.value,
       },
-      to: {
-        email: "sales@gitpod.io",
-      },
       subject:
         formData.selectedSubject.value +
         "  (from " +
