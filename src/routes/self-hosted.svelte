@@ -9,6 +9,7 @@
   import OpenGraph from "../components/open-graph.svelte";
   import PlansAndPricing from "../components/pricing/plans-and-pricing.svelte";
   import { pricingPlans } from "../contents/self-hosted";
+  import UsedBy from "../components/index/used-by.svelte";
 </script>
 
 <OpenGraph
@@ -18,6 +19,7 @@
   }}
 />
 <PlansAndPricing {trackingContext} {pricingPlans} />
+<UsedBy title="Used by 400k+ developers" />
 <Faqs {trackingContext} />
 <Explore
   contents={{

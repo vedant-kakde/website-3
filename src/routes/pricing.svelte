@@ -10,6 +10,7 @@
   import OtherPlans from "../components/pricing/other-plans.svelte";
   import PlansAndPricing from "../components/pricing/plans-and-pricing.svelte";
   import { pricingPlans, otherPlans } from "../contents/pricing";
+  import UsedBy from "../components/index/used-by.svelte";
 </script>
 
 <OpenGraph
@@ -24,6 +25,7 @@
     Can’t find the answer here? <a href="/contact/sales">Contact sales</a>
   </p>
 </PlansAndPricing>
+<UsedBy title="Used by 400k+ developers" />
 <OtherPlans {trackingContext} {otherPlans} />
 <Faqs {trackingContext} />
 <Explore />

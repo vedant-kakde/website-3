@@ -26,7 +26,10 @@
   </p>
   <a href="/contact/support" class="btn btn-primary">Talk to an expert</a>
 </header>
-<UsedBy title="Trusted by developer led companies" />
+<UsedBy
+  title="Trusted by developer led companies"
+  class="bg-off-white rounded-2xl shadow-normal pt-small pb-9"
+/>
 <Secure />
 <Program />
 <CallToAction />
