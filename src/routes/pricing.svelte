@@ -9,7 +9,7 @@
   import OpenGraph from "../components/open-graph.svelte";
   import OtherPlans from "../components/pricing/other-plans.svelte";
   import PlansAndPricing from "../components/pricing/plans-and-pricing.svelte";
-  import { otherPlans } from "../contents/pricing";
+  import { pricingPlans, otherPlans } from "../contents/pricing";
 </script>
 
 <OpenGraph
@@ -19,7 +19,11 @@
     title: "Pricing",
   }}
 />
-<PlansAndPricing {trackingContext} />
+<PlansAndPricing {trackingContext} {pricingPlans}>
+  <p slot="note" class="mt-micro text-center">
+    Can’t find the answer here? <a href="/contact/sales">Contact sales</a>
+  </p>
+</PlansAndPricing>
 <OtherPlans {trackingContext} {otherPlans} />
 <Faqs {trackingContext} />
 <Explore />

@@ -1,8 +1,8 @@
 <script lang="ts">
   import { ides } from "../../contents/home";
   import Section from "../section.svelte";
+  import Toggle from "../toggle.svelte";
   import IdeSwitcher from "./ide-switcher.svelte";
-  import ScreenshotToggle from "./screenshot-toggle.svelte";
   let selectedIde = "vscode";
   let ideType = "browser";
   let toggleChecked = false;
@@ -30,9 +30,15 @@
   <div class="row">
     <h2 class="text-center">Your environment, your tools, your craft</h2>
     <div class="max-w-5xl mx-auto">
-      <ScreenshotToggle
-        bind:value={toggleChecked}
-        on:change={() => (ideType = "desktop")}
+      <Toggle
+        class="mt-x-small mb-macro"
+        labelLeft="Desktop"
+        labelRight="Browser"
+        on:change={(e) => {
+          ideType = "desktop";
+          // @ts-ignore
+          toggleChecked = e.currentTarget.checked;
+        }}
       />
       <div class="relative">
         <div class="py-micro md:pr-micro lg:px-xx-small">
