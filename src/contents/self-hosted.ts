@@ -3,16 +3,16 @@ import { isEurope } from "../utils/helpers";
 
 export const pricingPlans: Pricing[] = [
   {
-    title: "Open Source",
+    title: "Basic",
     price: "Free",
     features: [
-      "10 Registered Users",
-      "Public & Private Repos",
+      "10 registered users",
+      "Public & private repos",
+      "Admin dashboard",
       "GitLab, GitHub and Bitbucket",
       "Unlimited Prebuilds",
       "Shared Workspaces",
       "Snapshots",
-      "Admin Dashboard",
     ],
     btnText: "Install now",
     btnHref: "/docs/self-hosted/latest",
@@ -21,8 +21,8 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Professional",
     price: isEurope() ? "€29" : "$35",
-    duration: "Per User/Month",
-    features: ["Everything in Free", "Starts with the 11th user"],
+    duration: "per user/month",
+    features: ["All in Basic", "Starts with the 11th user"],
     btnText: "Contact Sales",
     btnHref: "/enterprise-license",
     spiced: true,
