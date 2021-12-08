@@ -3,7 +3,7 @@
     interface Window {
       analytics: any;
       doNotTrack: any;
-      referrer: string;
+      referrer?: string;
     }
   }
 </script>
@@ -11,6 +11,22 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { page } from "$app/stores";
+
+  const handleButtonOrAnchorTracking = (props: MouseEvent) => {
+    var curr = props.target as HTMLElement;
+    //check if current target or any ancestor up to document is button or anchor
+    while (curr.parentNode != null || !(curr.parentNode instanceof Document)) {
+      if (
+        curr instanceof HTMLButtonElement ||
+        curr instanceof HTMLAnchorElement ||
+        (curr instanceof HTMLDivElement && curr.onclick)
+      ) {
+        console.log("Clickable clicked!");
+        break; //finding first ancestor is sufficient
+      }
+      curr = curr.parentNode as HTMLElement;
+    }
+  };
 
   const writeKey =
     typeof window !== "undefined" &&
@@ -111,6 +127,7 @@
     // Track first page
     analytics.page();
     window.referrer = window.location.href;
+    window.addEventListener("click", handleButtonOrAnchorTracking, false);
   });
 
   $: if ($page.path) {
