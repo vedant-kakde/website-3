@@ -9,11 +9,33 @@ title: Prebuilds
 
 # Prebuilds
 
-Download & install dependencies, run build scripts, you name it - tasks Gitpod takes care of **before** you start a new developer environment so you don't have to wait for any of that.
+Prebuilds allow workspaces start quickly.
 
-With prebuilds enabled for your project, Gitpod runs the `before` and `init` commands in your [`.gitpod.yml`](/docs/config-gitpod-file) file every time code is pushed to your repository. The resulting snapshot of the developer environment is called a prebuilt workspace.
+Gitpod watches repositories configured with an init script.
+The init script is triggered whenever there is a commit.
+After running the init script, the resulting prebuilt workspace directory is saved for future workspaces.
 
-When anyone starts a new workspace, all Gitpod needs to do is load the prebuilt workspace. Since the heavy-lifting happened during the prebuild phase, the workspace starts up quickly, allowing you to start your work right away.
+Users opening a new workspace will not have to wait for the init script to run during startup.
+Instead, they will see a message in the terminal like this:
+
+```txt
+🤙 This task ran as a workspace prebuild
+```
+
+Prebuilds are typically used to install dependencies and run builds. For example, the init task shown below
+installs npm packages into the `node_modules` directory _before_ users open a new workspace.
+
+```yaml
+tasks:
+  - init: |
+    npm install
+    echo 'Gitpod prebuilds save time for developers.'
+```
+
+#### Note ⚠️
+
+Prebuilds only include the workspace directory. Other directories like the home directory are not currently saved in a prebuild.
+Commands like `npm install -g` which save files outside the workspace directory, are not suitable for prebuild
 
 `youtube: ZtlJ0PakUHQ`
 
