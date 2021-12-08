@@ -78,7 +78,7 @@ export const empowermentFeatures: Resource[] = [
     text: "For those still learning the ropes, you can get our Unleashed Plan for <strong>€8 per month</strong> instead of €36/month.",
     link: {
       text: "Redeem offer",
-      href: "/education", // todo: this is gonna op en up the redeem student offer pop-up.
+      href: "", // todo: this is gonna op en up the redeem student offer pop-up.
     },
   },
 ];
