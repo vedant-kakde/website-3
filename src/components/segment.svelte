@@ -3,6 +3,7 @@
     interface Window {
       analytics: any;
       doNotTrack: any;
+      referrer: string;
     }
   }
 </script>
@@ -109,6 +110,7 @@
 
     // Track first page
     analytics.page();
+    window.referrer = window.location.href;
   });
 
   $: if ($page.path) {
@@ -116,7 +118,18 @@
     // a recompute on each new page.
     if (typeof window !== "undefined") {
       // Track subsequent pages
-      window.analytics?.page();
+      const page = {
+        path: window.location.pathname,
+        referrer: window.referrer,
+        search: window.location.search,
+        title: document.title,
+        url: window.location.href,
+      };
+      window.analytics?.page({
+        context: { page: page },
+        ...page,
+      });
+      window.referrer = window.location.href;
     }
   }
 </script>
