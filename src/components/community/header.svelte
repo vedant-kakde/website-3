@@ -1,6 +1,6 @@
 <script>
   import { primaryCtas } from "../../contents/community/index";
-  import Resource from "../support/resource.svelte";
+  import Resource from "../resource.svelte";
 </script>
 
 <style lang="postcss">

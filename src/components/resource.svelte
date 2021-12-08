@@ -1,14 +1,14 @@
 <script lang="ts">
-  import { isAnExternalLink } from "../../utils/helpers";
+  import { isAnExternalLink } from "../utils/helpers";
 
-  import type { Resource } from "../../types/resource.type";
+  import type { Resource } from "../types/resource.type";
   export let resource: Resource;
   const { title, text, link, icon } = resource;
   const target = isAnExternalLink(link.href) ? "_blank" : undefined;
 </script>
 
 <div
-  class="flex flex-col justify-between items-center max-w-xs lg:max-w-sm mb-micro md:mb-small bg-off-white py-small px-x-small sm:py-small rounded-4xl shadow-normal"
+  class="flex flex-col justify-between items-center max-w-xs lg:max-w-sm mb-micro md:mb-small bg-off-white py-small px-x-small sm:py-small rounded-4xl shadow-normal text-center"
 >
   <div>
     {#if icon}

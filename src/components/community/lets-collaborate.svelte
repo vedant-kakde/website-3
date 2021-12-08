@@ -1,7 +1,7 @@
 <script>
   import { letsCollaborateActions } from "../../contents/community";
   import Section from "../section.svelte";
-  import Resource from "../support/resource.svelte";
+  import Resource from "../resource.svelte";
 </script>
 
 <Section class="text-center">
