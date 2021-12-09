@@ -26,7 +26,7 @@
     >
       {timelineItem.title}
     </a>
-    <p class="rounded-2xl text-p-medium leading-relaxed">
+    <p class="rounded-2xl text-p-medium">
       {@html timelineItem.excerpt}
     </p>
   </div>
