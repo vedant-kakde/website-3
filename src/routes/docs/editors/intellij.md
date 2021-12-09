@@ -22,7 +22,7 @@ IntelliJ IDEA is currently in Beta. We have a [JetBrains channel on our Discord 
 2. Select "Open In Desktop IDE" and choose <kbd>IntelliJ IDEA</kbd>.
 3. Start a _new workspace_ and you will be prompted to use JetBrains when the workspace starts
 
-<img width="461" alt="Selecting InteliJ in the preferences" src="/images/editors/intelij.gif">
+<img class="screenshot" alt="Selecting InteliJ in the preferences" src="/images/editors/intelij.gif">
 
 ### FAQs
 

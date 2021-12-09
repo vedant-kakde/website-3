@@ -290,4 +290,8 @@
     white-space: initial !important;
     text-decoration: underline;
   }
+
+  .screenshot {
+    @apply shadow-medium w-full rounded-xl max-w-3xl mt-x-small;
+  }
 }

@@ -161,6 +161,7 @@
         Compared start-up time until ready-to-code for<br />
         <a
           href="https://github.com/gitpod-io/vscode"
+          target="_blank"
           on:click={() =>
             window.analytics.track("external_resource_clicked", {
               name: "vscode-repo",
@@ -205,6 +206,7 @@
               url: "https://github.com/features/codespaces",
               context: "body",
             })}
+          target="_blank"
         >
           <strong>GitHub Codespaces</strong>
         </a>.
@@ -217,7 +219,7 @@
         and achieves best-in-class resource-efficiency with scalable workspaces
         running on shared high-powered cloud servers. <a
           href="https://www.researchgate.net/publication/333096446_Reduced_carbon_emission_and_optimized_power_consumption_technique_using_container_over_virtual_machine"
-          >Helping our planet</a
+          target="_blank">Helping our planet</a
         > 🌱.
       </p>
     </div>

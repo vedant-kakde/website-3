@@ -22,7 +22,7 @@ JetBrains PyCharm is currently in Beta. We have a [JetBrains channel on our Disc
 2. Select "Open In Desktop IDE" and choose <kbd>PyCharm</kbd>.
 3. Start a _new workspace_ and you will be prompted to use JetBrains when the workspace starts
 
-<img width="461" alt="Selecting PyCharm in the preferences" src="/images/editors/goland.gif">
+<img class="screenshot" alt="Selecting PyCharm in the preferences" src="/images/editors/pycharm.gif">
 
 ### FAQs
 

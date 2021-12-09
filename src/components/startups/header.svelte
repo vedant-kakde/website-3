@@ -13,8 +13,14 @@
   >
     Use all our services for free, up to 2 years.
   </p>
-  <a href="https://bit.ly/3liFICY" target="_blank" class="btn-conversion"
-    >Apply now</a
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSc-Vaelz0yG-XkuN2CYyUtZz0khhwMaju4oSLdMNIzoMkpHug/viewform"
+    on:click={() =>
+      window.analytics.track("startup_application_opened", {
+        context: "hero",
+      })}
+    target="_blank"
+    class="btn-conversion">Apply now</a
   >
   <Quote />
 </header>
