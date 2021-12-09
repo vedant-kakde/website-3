@@ -79,8 +79,8 @@
       }
 
       @media (max-width: 360px) {
-        br {
-          display: none;
+        & > :first-child {
+          flex: 0 0 110px;
         }
       }
     }

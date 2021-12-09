@@ -101,7 +101,7 @@
       }}
     >
       <div
-        class="icon-box flex items-center justify-center bg-off-white rounded-lg md:rounded-xl lgx:rounded-2xl shadow-lg transition duration-200 linear"
+        class="relative icon-box flex items-center justify-center bg-off-white rounded-lg md:rounded-xl lgx:rounded-2xl shadow-lg transition duration-200 linear"
         class:grayed={!screenshots}
       >
         <img src="/svg/index/{icon}" alt={label} class="icon" />

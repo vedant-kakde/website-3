@@ -92,11 +92,15 @@ Well, in order to really be able to forget about it, we have implemented an auto
 
 ![Pin Workspaces](../../../static/images/blog/update-december-2019/pin-gc.jpg)
 
+<!--
+
 ## 💬New Community Forum
 
 We've moved the support forum to [community.gitpod.io](https://community.gitpod.io/), which is based on the awesome Discourse platform.
 
 [Join the Community](https://community.gitpod.io)
+
+-->
 
 ## 🥂Have a Great Holiday Season!
 

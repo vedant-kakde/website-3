@@ -16,12 +16,6 @@
       trackingName: "github",
     },
     {
-      href: "https://community.gitpod.io/",
-      alt: "Discourse",
-      icon: "/svg/brands/discourse.svg",
-      trackingName: "discourse",
-    },
-    {
       href: "https://www.gitpod.io/chat",
       alt: "Discord",
       icon: "/svg/brands/discord.svg",

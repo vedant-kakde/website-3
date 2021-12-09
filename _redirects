@@ -1,6 +1,6 @@
 /blog/gitlab-integration/+ /blog/gitlab-integration 301
 /careers https://gitpod.crew.work/jobs 301
-/chat https://discord.gg/ZZ8wxgHtc6 301
+/chat https://discord.com/invite/gitpod 301
 /cla https://www.github.com/gitpod-io/cla
 /code-of-conduct https://github.com/gitpod-io/.github/blob/main/CODE_OF_CONDUCT.md
 /configure/editor /docs/editors/vscode 301
@@ -65,6 +65,7 @@
 /docs/rust-in-gitpod /docs/languages/rust 301
 /docs/self-hosted/latest/self-hosted /docs/self-hosted/latest 301
 /docs/vue-in-gitpod /docs/languages/vue 301
+/docs/editors/jetbrains-private-beta /docs/editors/ 301
 /education /pricing#do-you-offer-discounts-for-students-and-educational-institutions 301
 /gitpod-business.html /pricing 301
 /gitpod-vs-codespaces /gitpod-vs-github-codespaces 301

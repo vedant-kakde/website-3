@@ -27,14 +27,6 @@ export const resources: Resource[] = [
     },
   },
   {
-    title: "Community Forum",
-    text: "If you are looking for help with common requests, connect with our community on Discourse.",
-    link: {
-      href: "https://community.gitpod.io/",
-      text: "View forum",
-    },
-  },
-  {
     title: "Discord Server",
     text: "Would you like to take part in live coding sessions and connect with the community ? Then join us on Discord.",
     link: {
