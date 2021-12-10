@@ -28,7 +28,7 @@
     </div>
     <Carousel>
       {#each testimonials as testimonial, position}
-        <Testimonial {testimonial} {position} />
+        <Testimonial {testimonial} />
       {/each}
     </Carousel>
   </div>

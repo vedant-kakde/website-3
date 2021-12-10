@@ -3,8 +3,6 @@
   export let testimonial: Testimonial;
 
   const { name, avatar, role, org, text, twitterHandle, tweetId } = testimonial;
-
-  export let position: Number;
 </script>
 
 <style lang="scss">

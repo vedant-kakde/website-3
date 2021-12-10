@@ -11,7 +11,7 @@
   >
     <img src={imgSrc} alt="Gitpod founders group" class="rounded-4xl mx-auto" />
     <p class="py-xx-small">Download founders group picture</p>
-    <a href={imgSrc} />
+    <a href={imgSrc} download class="btn-cta">PNG </a>
   </div>
   <p class="text-large">
     Please <a href="/contact/support">contact us</a> for any intended use not covered

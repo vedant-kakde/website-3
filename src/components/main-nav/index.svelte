@@ -19,11 +19,6 @@
     window.scrollTo(0, 0);
   };
 
-  const toggle = () => {
-    $menuState = !menuState;
-    showHideOverflowY(false);
-  };
-
   const navItems = [
     {
       href: "/screencasts",
