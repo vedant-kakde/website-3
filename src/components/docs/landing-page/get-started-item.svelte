@@ -9,7 +9,7 @@
   <div class="flex justify-center">
     <img
       src={getStartedItem.icon.path}
-      style={`transform: scale(${getStartedItem.icon.transform});`}
+      style={`transform: ${getStartedItem.icon.transform}`}
       alt={getStartedItem.title}
     />
   </div>

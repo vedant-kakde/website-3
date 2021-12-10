@@ -1,6 +1,6 @@
 export type GetStartedIcon = {
   path: string;
-  transform: number;
+  transform: string;
 };
 
 export type GetStartedItem = {
