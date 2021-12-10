@@ -49,7 +49,7 @@
   >
     <label for="search" class="sr-only">Search</label>
     <img
-      class="absolute top-1/2 left-3 transform -translate-y-1/2 pointer-events-none h-xx-small w-xx-small"
+      class="absolute top-1/2 left-3 -translate-y-1/2 pointer-events-none h-xx-small w-xx-small"
       src="/svg/mag-glass.svg"
       alt="Search"
       aria-hidden="true"

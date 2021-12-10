@@ -1,8 +1,9 @@
 /blog/gitlab-integration/+ /blog/gitlab-integration 301
-/memes https://github.com/gitpod-io/gitpod/issues/6877 301
-/chat https://discord.gg/ZZ8wxgHtc6 301
+/careers https://gitpod.crew.work/jobs 301
+/chat https://discord.com/invite/gitpod 301
 /cla https://www.github.com/gitpod-io/cla
 /code-of-conduct https://github.com/gitpod-io/.github/blob/main/CODE_OF_CONDUCT.md
+/configure/editor /docs/editors/vscode 301
 /direction https://www.notion.so/gitpod/Gitpod-s-Direction-be35d064c0704fbda61c542b84e07ef6 301
 /docs/10_getting_started /docs/getting-started 301
 /docs/10_Getting_Started /docs/getting-started 301
@@ -23,16 +24,12 @@
 /docs/43_config_ports /docs/config-ports 301
 /docs/44_config_start_tasks /docs/config-start-tasks 301
 /docs/45_checkout_location /docs/checkout-location 301
-/docs/develop/vscode-desktop-support /docs/editors/vscode 301
-/configure/editor /docs/editors/vscode 301
 /docs/45_Checkout_Location /docs/checkout-location 301
 /docs/45_Config_Go /docs/checkout-location 301
 /docs/46_prebuilds /docs/prebuilds 301
 /docs/47_environment_variables /docs/environment-variables 301
 /docs/47_Environment_Variables /docs/environment-variables 301
 /docs/50_ide /docs/ide 301
-/docs/ide /docs/editors 301
-/docs/integrations/jetbrains /docs/editors 301
 /docs/52_tips_and_tricks /docs/tips-and-tricks 301
 /docs/54_git /docs/git 301
 /docs/56_search /docs/search 301
@@ -46,11 +43,14 @@
 /docs/changelog /changelog 301
 /docs/configuration /docs/configure 301
 /docs/cpp-in-gitpod /docs/languages/cpp 301
+/docs/develop/vscode-desktop-support /docs/editors/vscode 301
 /docs/dotnet-in-gitpod /docs/languages/dotnet 301
 /docs/go_in_gitpod /docs/go-in-gitpod 301
 /docs/go-in-gitpod /docs/languages/go 301
 /docs/html-in-gitpod /docs/languages/html 301
+/docs/ide /docs/editors 301
 /docs/index.html /docs 301
+/docs/integrations/jetbrains /docs/editors 301
 /docs/java_in_gitpod /docs/java-in-gitpod 301
 /docs/java-in-gitpod /docs/languages/java 301
 /docs/julia_in_gitpod /docs/julia-in-gitpod 301
@@ -65,10 +65,12 @@
 /docs/rust-in-gitpod /docs/languages/rust 301
 /docs/self-hosted/latest/self-hosted /docs/self-hosted/latest 301
 /docs/vue-in-gitpod /docs/languages/vue 301
+/docs/editors/jetbrains-private-beta /docs/editors/ 301
 /education /pricing#do-you-offer-discounts-for-students-and-educational-institutions 301
 /gitpod-business.html /pricing 301
 /gitpod-vs-codespaces /gitpod-vs-github-codespaces 301
 /media /blog/next-chapter-for-gitpod 301
+/memes https://github.com/gitpod-io/gitpod/issues/6877 301
 /privacy/terms.html /terms 301
 /references/changelog /changelog 301
 /roadmap https://github.com/gitpod-io/roadmap 301

@@ -26,7 +26,7 @@
           href="/enterprise-license">request a license key</a
         >
         or
-        <a href="/contact">Get in touch</a> if you have any questions.
+        <a href="/contact/sales">Get in touch</a> if you have any questions.
       </p>
     </Faq>
     <Faq title="Can I add more users to my plan at any time?" {trackingContext}>
@@ -67,7 +67,7 @@
         Currently, <strong>Gitpod Self-Hosted</strong> can only be purchased on
         request. Please <a href="/enterprise-license">request a license key</a>
         and we'll contact you. If you have any questions, please
-        <a href="/contact">Get in touch</a>. All our plans can be paid via
+        <a href="/contact/sales">Get in touch</a>. All our plans can be paid via
         invoice.
       </p>
     </Faq>
@@ -77,12 +77,14 @@
     >
       <p>
         Yes, qualified educational institutions may receive a special discount.
-        Please <a href="/contact">Contact sales</a>.
+        Please <a href="/contact/sales">Contact sales</a>.
       </p>
     </Faq>
     <Faq title="Still have more questions?" {trackingContext}>
       <p>
-        We are happy to answer them, please <a href="/contact">Get in Touch</a>.
+        We are happy to answer them, please <a href="/contact/support"
+          >Get in Touch</a
+        >.
       </p>
     </Faq>
   </Faqs>

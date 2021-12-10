@@ -28,7 +28,7 @@ export const brands: Brand[] = [
   {
     alt: "DataStax",
     logo: "svg/brands/datastax.svg",
-    transform: "scale(1.1)"
+    transform: "scale(1.1)",
   },
   {
     alt: "Amazon",
@@ -462,32 +462,38 @@ export const ides: Ide[] = [
   },
   {
     name: "intellij",
+    availibility: "beta",
     label: "IntelliJ IDEA",
-    icon: "intellij.svg"
+    icon: "intellij.svg",
   },
   {
     name: "goland",
+    availibility: "beta",
     label: "Goland",
     icon: "goland.svg",
   },
   {
     name: "pycharm",
+    availibility: "beta",
     label: "PyCharm",
     icon: "pycharm.svg",
   },
   {
     name: "webstorm",
+    availibility: "soon",
     label: "GoLand",
     icon: "webstorm.svg",
   },
   {
     name: "rubymine",
+    availibility: "soon",
     label: "RubyMine",
     icon: "rubymine.svg",
   },
   {
-    name: "clion",
-    label: "CLion",
-    icon: "clion.svg"
-  }
+    name: "phpstorm",
+    availibility: "beta",
+    label: "PhpStorm",
+    icon: "phpstorm.svg",
+  },
 ];

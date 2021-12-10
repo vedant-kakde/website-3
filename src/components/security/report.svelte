@@ -11,6 +11,6 @@
       We welcome close collaboration with the worldwide security research
       community.
     </p>
-    <a href="/contact" class="btn-secondary">Report security concern</a>
+    <a href="/contact/support" class="btn-secondary">Report security concern</a>
   </div>
 </Section>

@@ -5,7 +5,7 @@
   import LayoutMain from "../components/layout-main.svelte";
   import LayoutRoot from "../components/layout-root.svelte";
   import Nav from "../components/main-nav/index.svelte";
-  import Footer from "../components/footer.svelte";
+  import Footer from "../components/footer/index.svelte";
   import CookieConsent from "../components/banners/cookie-consent.svelte";
 
   onMount(() => {

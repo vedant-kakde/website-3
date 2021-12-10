@@ -130,9 +130,6 @@
     }
   }
 
-  .flex-grow {
-    flex-grow: 1;
-  }
   .text-center {
     text-align: center;
   }
@@ -161,6 +158,7 @@
         Compared start-up time until ready-to-code for<br />
         <a
           href="https://github.com/gitpod-io/vscode"
+          target="_blank"
           on:click={() =>
             window.analytics.track("external_resource_clicked", {
               name: "vscode-repo",
@@ -174,7 +172,7 @@
     </div>
     <div class="text-box">
       <h2 class="max-w-30rem">Ready in a flash</h2>
-      <p class="text-large max-w-30rem flex-grow">
+      <p class="text-large max-w-30rem grow">
         Gitpod removes long init and build times by continuously pre-building
         workspaces for your project. Thereby it allows you to start coding or
         debugging immediately, from any context, at any time.
@@ -205,6 +203,7 @@
               url: "https://github.com/features/codespaces",
               context: "body",
             })}
+          target="_blank"
         >
           <strong>GitHub Codespaces</strong>
         </a>.
@@ -217,7 +216,7 @@
         and achieves best-in-class resource-efficiency with scalable workspaces
         running on shared high-powered cloud servers. <a
           href="https://www.researchgate.net/publication/333096446_Reduced_carbon_emission_and_optimized_power_consumption_technique_using_container_over_virtual_machine"
-          >Helping our planet</a
+          target="_blank">Helping our planet</a
         > 🌱.
       </p>
     </div>
@@ -424,7 +423,7 @@
   <small
     >Disclaimer: All information, prices, and data were last verified on Sept.
     3, 2021. To report any incorrect or outdated information, please <a
-      href="/contact">contact us.</a
+      href="/contact/support">contact us.</a
     ></small
   >
 </p>
@@ -473,7 +472,7 @@
 <div class="cards double mt-1rem items-stretch">
   <div class="card p-4rem">
     <h2 class="h3">Automation-first</h2>
-    <p class="flex-grow">
+    <p class="grow">
       Simply add your build command into a .gitpod.yml file and let Gitpod do
       the heavy-lifting. Once you’ve experienced the freedom of ephemeral
       workspaces, you’ll never want to go back to long-lived,
@@ -485,7 +484,7 @@
   </div>
   <div class="card p-4rem">
     <h2 class="h3">Code in a carbon-neutral workspace</h2>
-    <p class="flex-grow">
+    <p class="grow">
       Not only is Gitpod more resource-efficient but it also runs on 100%
       carbon-neutral cloud servers (GCP). All the power, with a lower cost to
       our planet.

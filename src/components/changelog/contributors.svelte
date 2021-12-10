@@ -15,6 +15,6 @@
 
 <span>
   <span class="flex-shrink-0">
-    <Avatars {usernames} socialMediaLinkClasses="filter hover:drop-shadow" />
+    <Avatars {usernames} socialMediaLinkClasses="hover:drop-shadow" />
   </span>
 </span>

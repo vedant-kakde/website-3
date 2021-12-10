@@ -31,7 +31,7 @@
     {#if menuItem.subMenu && isActiveSection}
       <ul class="ml-4 mt-4 text-p-medium leading-x-small">
         {#each menuItem.subMenu as sub}
-          <li>
+          <li class="flex flex-row items-center">
             <MenuLink href={sub.path}>{sub.title}</MenuLink>
             {#if sub.status}
               <Pill text={sub.status} />

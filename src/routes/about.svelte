@@ -6,7 +6,6 @@
   import Explore from "../components/explore.svelte";
   import LogoAnimated from "../components/logo-animated.svelte";
   import OpenGraph from "../components/open-graph.svelte";
-  import { careers } from "../contents/careers";
 </script>
 
 <style>
@@ -185,13 +184,11 @@
 
 <Explore
   contents={{
-    title: `We have ${careers.length} open position${
-      careers.length == 1 ? "" : "s"
-    }`,
+    title: "We have open positions",
     description: "Come join us.",
     link: {
       text: "See openings",
-      href: "/careers",
+      href: "https://www.gitpod.io/careers",
     },
   }}
 />

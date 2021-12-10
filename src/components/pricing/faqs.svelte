@@ -43,8 +43,8 @@
       <p>
         Yes, qualified educational institutions may receive a special discount.
         Please
-        <a href="/contact">Contact us</a>. If you are a student, you may use the
-        Student Unlimited Plan for {isEurope() ? "€8" : "$9"} per month (usually{" "}
+        <a href="/contact/sales">Contact us</a>. If you are a student, you may
+        use the Student Unlimited Plan for {isEurope() ? "€8" : "$9"} per month (usually{" "}
         {isEurope() ? "€35" : "$39"}). See
         <a href="#plans">Gitpod for Students</a> for more information.
       </p>
@@ -95,7 +95,9 @@
     </Faq>
     <Faq title="Still have more questions?" {trackingContext}>
       <p>
-        We are happy to answer them, please <a href="/contact">Get in Touch</a>.
+        We are happy to answer them, please <a href="/contact/support"
+          >Get in Touch</a
+        >.
       </p>
     </Faq>
   </Faqs>

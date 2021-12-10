@@ -1,9 +1,10 @@
 export type Ide = {
-	name: string;
-    label: string;
-    screenshots?: {
-      desktop: string;
-      browser: string;
-    },
-    icon: string;
-}
+  name: string;
+  label: string;
+  availibility?: "soon" | "beta";
+  screenshots?: {
+    desktop: string;
+    browser: string;
+  };
+  icon: string;
+};

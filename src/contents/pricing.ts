@@ -97,7 +97,7 @@ export const otherPlans = [
       <li>Log-in with a free Gitpod account.</li>
       <li>Make sure that the primary email address of the GitHub/GitLab/Bitbucket account you use in Gitpod is from a domain of your educational institution.</li>
       <li>Go to the <a href="https://gitpod.io/plans">Plans</a> page and select the <em>Student Unlimited Plan</em>.</li>
-      <li>If it doesn't appear, please <a href="/contact">contact us</a> to register your educational email domain.</li>
+      <li>If it doesn't appear, please <a href="/contact/support">contact us</a> to register your educational email domain.</li>
       </ul>`,
     ],
     btnText: "Check now",

@@ -20,6 +20,14 @@
   height: 12px;
   width: 12px;
 }
+.hilited {
+  max-width: 50rem;
+  margin: auto;
+}
+.hilited h2 {
+  border-left: 0.25rem solid var(--brand-ripe);
+  padding-left: 1.75rem;
+}
 .hilited.redirector {
   margin-top: var(--small);
 }

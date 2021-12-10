@@ -20,6 +20,16 @@
   export let changelogEntries: ChangelogEntryType[];
 </script>
 
+<style lang="postcss">
+  .changelog-entry {
+    @apply flex flex-col md:flex-row last:pb-x-large md:last:pb-xx-large;
+
+    & + .changelog-entry {
+      @apply pt-x-large md:pt-xx-large;
+    }
+  }
+</style>
+
 <OpenGraph
   data={{
     description: "New features and improvements to Gitpod.",
@@ -45,9 +55,11 @@
   </header>
 </div>
 
-<div class="flex flex-col space-y-x-large md:space-y-xx-large">
+<div
+  class="flex flex-col space-y-x-large md:space-y-xx-large divide-y divide-gray-300"
+>
   {#each changelogEntries as { date, title, content, image, alt }}
-    <div class="flex flex-col md:flex-row">
+    <div class="changelog-entry">
       <ChangelogDate
         date={formatDate(date)}
         href={`/changelog/${stringToBeautifiedFragment(title)}`}
@@ -64,6 +76,5 @@
         {@html content}
       </Wrapper>
     </div>
-    <div class="border-b border-gray-300" />
   {/each}
 </div>

@@ -60,8 +60,8 @@
   {/if}
   <div
     class="blurb {layout === 'column'
-      ? 'flex-col h-full'
-      : ''} flex flex-wrap lg:justify-between p-x-small pt-small"
+      ? 'flex-col h-full flex-nowrap'
+      : 'flex-wrap'} flex lg:justify-between p-x-small pt-small"
   >
     <div>
       {#if headlineOrder === "h3"}
@@ -84,7 +84,7 @@
         <Avatars
           usernames={post.author}
           socialMediaLinks={authorSocialMediaLinks}
-          socialMediaLinkClasses="filter hover:drop-shadow"
+          socialMediaLinkClasses="hover:drop-shadow"
         />
         <a
           href="/{type}/{post.slug}"

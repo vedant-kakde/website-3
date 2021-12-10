@@ -27,13 +27,13 @@ These platforms do not currently work with Gitpod Self-Hosted but we would like 
 - [Red Hat® OpenShift®](https://github.com/gitpod-io/gitpod/issues/5409)
 - [Rancher Kubernetes Engine (RKE)](https://github.com/gitpod-io/gitpod/issues/5410)
 
-If you are considering purchasing a commerical license for Gitpod Self-Hosted and need one of the above platforms then please [contact us](/contact) to start discussions about making support for them happen sooner.
+If you are considering purchasing a commerical license for Gitpod Self-Hosted and need one of the above platforms then please [contact us](/contact/sales) to start discussions about making support for them happen sooner.
 
 ## Minimum Kubernetes requirements
 
 We strongly recommend deploying a dedicated kubernetes cluster just for Gitpod Self-Hosted.
 
-Here are the minimumn requirements:
+Here are the minimum requirements:
 
 - Either Ubuntu 18.04 with ≥ v5.4 kernel or Ubuntu 20.04 with ≥ v5.4 kernel.
 - Calico for the networking overlay and network policy.

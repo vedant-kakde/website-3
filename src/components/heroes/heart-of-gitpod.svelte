@@ -11,5 +11,6 @@
       src: "/images/heroes/heart-of-gitpod.png",
       alt: "Community Heroes",
     },
+    showTheMediaFirstOnMobile: true,
   }}
 />

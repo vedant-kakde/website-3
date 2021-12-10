@@ -38,7 +38,7 @@
     {/if}
 
     <p>
-      <a href="/contact">Contact Us</a>
+      <a href="/contact/support">Contact Us</a>
       —
       <a href="https://status.gitpod.io/">Gitpod Status</a>
       —

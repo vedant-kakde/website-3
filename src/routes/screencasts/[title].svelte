@@ -20,17 +20,6 @@
   export let screencast: ScreencastType;
 </script>
 
-<style>
-  .related {
-    margin: 2rem auto;
-    text-align: center;
-  }
-
-  .header {
-    @apply mb-small;
-  }
-</style>
-
 <OpenGraph
   data={{
     description: screencast.description,
@@ -38,13 +27,13 @@
   }}
 />
 
-<header class="header">
+<header class="header tight">
   <h1>{screencast.title}</h1>
   <p>{screencast.description}</p>
 </header>
 
 <YouTubeEmbed embedId={screencast.youtubeId} title={screencast.title} />
-<p class="related">
+<p class="text-center my-x-small">
   Related documentation:
   {#each screencast.relatedDocs as relatedDoc, i}
     <a href="/docs{relatedDoc.path}">{relatedDoc.title}</a>

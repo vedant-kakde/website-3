@@ -6,7 +6,7 @@ export const benefits: Benefit[] = [
     icon: {
       src: "/svg/heroes/oppritunities-to-grow.svg",
     },
-    title: "Oppurtunities to grow",
+    title: "Opportunities to grow",
     text: "We promise you a safe space to improve your coding, content creation or even public speaking skills.",
   },
   {
@@ -23,7 +23,7 @@ export const benefits: Benefit[] = [
       transform: "scale(1.9) translateY(3px)",
     },
     title: "Recognition",
-    text: "Associate yourself with a cool brand and become one of our community moderators on Discord.",
+    text: "Associate yourself with our brand and become one of our community moderators on Discord.",
   },
   {
     icon: {

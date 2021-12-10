@@ -515,10 +515,12 @@
       <h3>Orbit Labs</h3>
       <p>
         We use Orbit Labs, provided by Orbit Labs, Inc., to analyse engagement
-        of our community on social Platforms such as GitHub, Twitter, Discord,
-        and Discourse. Orbit Labs has no access to data of our Website Visitors.
-        Orbit Labs acts as data controller in accordance with the GDPR (see
-        Section <i>Who is responsible for your personal information</i> of the
+        of our community on social Platforms such as GitHub, Twitter and
+        Discord. Orbit Labs has no access to data of our Website Visitors. Orbit
+        Labs acts as data controller in accordance with the GDPR (see Section <i
+          >Who is responsible for your personal information</i
+        >
+        of the
         <a href="https://orbit.love/privacy-policy">Privacy Policy</a>).
       </p>
 

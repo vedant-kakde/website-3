@@ -10,9 +10,9 @@
   import Explore from "../../components/explore.svelte";
 </script>
 
-<style type="scss">
-  h1 {
-    text-align: center;
+<style lang="postcss">
+  .screencasts {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 25rem));
   }
 </style>
 
@@ -24,10 +24,12 @@
 />
 
 <Section>
-  <h1 class="h2">Get started with a screencast</h1>
+  <h1 class="h2 text-center">Get started with a screencast</h1>
 </Section>
 
-<section class="screencasts">
+<section
+  class="screencasts grid justify-center gap-y-medium gap-x-5 m-x-small px-5"
+>
   {#each screencasts as screencast, index}
     <Screencast {screencast} screencastNumber={index + 1} />
   {/each}

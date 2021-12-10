@@ -13,10 +13,7 @@
 
 <style lang="scss">
   .back-button {
-    display: inline-flex;
-    align-items: center;
     line-height: 138%;
-    color: var(--black);
   }
 
   .back-button__icon {
@@ -58,7 +55,7 @@
 </style>
 
 <button
-  class="back-button"
+  class="back-button flex items-center text-black w-full py-3"
   type="button"
   on:click={() => {
     $topicsState = true;

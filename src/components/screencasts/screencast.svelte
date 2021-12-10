@@ -9,27 +9,12 @@
   $: screencastDurationSeconds = screencast.duration % 60;
 </script>
 
-<style lang="scss">
-  time {
-    color: var(--dark-grey);
-  }
-  article {
-    max-width: 400px;
-    min-width: 320px;
-  }
-  time,
-  p {
-    margin-left: 1rem;
-  }
-  time {
-    font-size: var(--fine-print);
-  }
-</style>
-
 <article>
   <Preview {screencast} {screencastNumber} />
-  <time
-    >Duration: {screencastDurationMinutes}m {screencastDurationSeconds}s</time
-  >
-  <p>{screencast.description}</p>
+  <div class="pl-micro">
+    <time class="text-dark-grey text-fine-print"
+      >Duration: {screencastDurationMinutes}m {screencastDurationSeconds}s</time
+    >
+    <p>{screencast.description}</p>
+  </div>
 </article>

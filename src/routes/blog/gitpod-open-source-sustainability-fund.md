@@ -120,7 +120,7 @@ Gitpod has plenty of smaller dependencies for doing activities such as parsing T
 
 For dependencies that are of strategic importance, then the strategy would be a combination of financial support, becoming regular contributors to the project or even hiring the maintainers of these projects as engineers for [short|long]-term engagements.
 
-Do you have more ideas on how funding can foster a diverse community? → Please <a href="/contact">get in contact</a>.
+Do you have more ideas on how funding can foster a diverse community? → Please <a href="/contact/support">get in contact</a>.
 
 ## See you at DevX Conference
 

@@ -14,7 +14,7 @@
     <img
       src="/svg/security/heart.svg"
       alt="Heart"
-      class="absolute -top-16 left-1/2 transform -translate-x-1/2 h-10"
+      class="absolute -top-16 left-1/2 -translate-x-1/2 h-10"
     />
     <h1>Thanks</h1>
     <p class="text-large">
