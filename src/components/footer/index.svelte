@@ -122,7 +122,7 @@
             href={link.href}
             target="_blank"
             class="hover:opacity-80"
-            analytics="&lcub"variant":"social_media","context":"{link.alt.toLowerCase()}_visit"&rcub"
+            analytics="&lcub&quotvariant&quot:&quotsocial_media&quot,&quotcontext&quot:&quot{link.alt.toLowerCase()}_visit&quot&rcub"
           >
             <img src={link.icon} alt={link.alt} height="24" width="24" />
           </FooterLink>

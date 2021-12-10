@@ -21,7 +21,7 @@
   }
 </style>
 
-<li data-analytics="&lcub"position":"sidebar"&rcub">
+<li data-analytics="&lcub&quotposition&quot:&quotsidebar&quot&rcub">
   <div
     class:isActiveSection
     class="px-6 inline-block text-p-large leading-x-small"
@@ -33,7 +33,7 @@
         {#each menuItem.subMenu as sub}
           <li
             class="flex flex-row items-center"
-            data-analytics="&lcub"context":"submenu"&rcub"
+            data-analytics="&lcub&quotcontext&quot:&quotsubmenu&quot&rcub"
           >
             <MenuLink href={sub.path}>{sub.title}</MenuLink>
             {#if sub.status}

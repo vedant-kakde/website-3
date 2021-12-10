@@ -15,7 +15,7 @@
     target="_blank"
     class="inline-flex py-macro px-4 items-center justify-center bg-white rounded-2xl text-btn-small text-black shadow-sm font-semibold hover:bg-off-white focus:bg-off-white"
     rel="noopener"
-    data-analytics="&lcub"variant":"open_in_gitpod"&rcub"
+    data-analytics="&lcub&quotvariant&quot:&quotopen_in_gitpod&quot&rcub"
   >
     <span>
       <LogoTextless />
