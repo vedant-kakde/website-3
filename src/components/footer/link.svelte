@@ -2,6 +2,7 @@
   export let href: string;
   export let rel: string = "";
   export let target: string = "";
+  export let analytics: string = "";
 
   let clazz: string = "";
   export { clazz as class };
@@ -11,6 +12,7 @@
   {href}
   {rel}
   {target}
+  data-analytics={analytics}
   on:click
   class="
     text-dark-grey

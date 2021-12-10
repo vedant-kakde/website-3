@@ -144,14 +144,7 @@
       {/if}
     </div>
     <div class="flex items-center">
-      <SignUpButtonTablet
-        on:click={() => {
-          toggle();
-          window.analytics.track("dashboard_clicked", {
-            context: "header_button",
-          });
-        }}
-      />
+      <SignUpButtonTablet />
       <MobileMenuToggle />
     </div>
   </div>

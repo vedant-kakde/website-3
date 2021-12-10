@@ -11,7 +11,10 @@
   const endDate = new Date("2021-11-10");
 </script>
 
-<div class="border-b border-gray-300 border-solid">
+<div
+  class="border-b border-gray-300 border-solid"
+  data-analytics="&lcub"position":"announcement"&rcub"
+>
   <Banner
     storageKey="announcement-{`${startDate}${endDate}`}"
     let:closeBanner

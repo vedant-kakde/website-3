@@ -9,5 +9,6 @@
 <a
   href="/#get-started"
   on:click
+  data-analytics="&lcub"context":"dashboard"&rcub"
   class="hidden sm:inline no-underline text-sm mr-micro">Sign Up</a
 >

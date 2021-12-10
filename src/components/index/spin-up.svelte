@@ -39,11 +39,6 @@
         <a
           {href}
           target="_blank"
-          on:click={() =>
-            window.analytics.track("extension_button_clicked", {
-              type: name,
-              url: href,
-            })}
           rel="noopener"
           class="btn-otherbrand text-medium"
         >

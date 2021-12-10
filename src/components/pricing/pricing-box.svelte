@@ -14,8 +14,6 @@
     footnote,
     trackingName,
   } = pricing;
-
-  export let trackingContext: String;
 </script>
 
 <style lang="postcss">
@@ -90,12 +88,7 @@
   {#if btnHref && btnText}
     <a
       href={btnHref}
-      on:click={() =>
-        window.analytics.track("pricing_plan_clicked", {
-          context: trackingContext,
-          plan: trackingName,
-          name: "cta",
-        })}
+      data-analytics="&lcub"context":"{trackingName}","position":"hero"&rcub"
       class="btn-cta">{btnText}</a
     >
   {/if}

@@ -128,7 +128,7 @@
   }
 </style>
 
-<div class="hero mt-x-small">
+<div class="hero mt-x-small" data-analytics="&lcub"position":"hero"&rcub">
   <div class="hero__text">
     <h1 class="homeh1">
       Always<br /> Ready to Code.
@@ -140,15 +140,7 @@
     <div class="hero__action">
       <div class="hero__try-now text-small">
         <div>
-          <a
-            href="#get-started"
-            on:click={() =>
-              window.analytics.track("product_cta_clicked", {
-                context: "hero",
-                destination: "#get-started",
-              })}
-            class="btn-conversion">Try Now</a
-          >
+          <a href="#get-started" class="btn-conversion">Try Now</a>
         </div>
         <p>
           Open a workspace.
@@ -172,11 +164,6 @@
             bind:this={githubStarsEl}
             class="github-button"
             href="https://github.com/gitpod-io/gitpod"
-            on:click={() =>
-              window.analytics.track("social_opened", {
-                platform: "github",
-                context: "hero",
-              })}
             data-icon="octicon-star"
             data-size="large"
             data-show-count="true"

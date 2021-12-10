@@ -7,25 +7,21 @@
       href: "https://twitter.com/gitpod",
       alt: "Twitter",
       icon: "/svg/brands/twitter.svg",
-      trackingName: "twitter",
     },
     {
       href: "https://github.com/gitpod-io",
       alt: "GitHub",
       icon: "/svg/brands/github.svg",
-      trackingName: "github",
     },
     {
       href: "https://community.gitpod.io/",
       alt: "Discourse",
       icon: "/svg/brands/discourse.svg",
-      trackingName: "discourse",
     },
     {
       href: "https://www.gitpod.io/chat",
       alt: "Discord",
       icon: "/svg/brands/discord.svg",
-      trackingName: "discord",
     },
   ];
 </script>
@@ -59,12 +55,6 @@
           <FooterLink
             href="https://www.gitpodstatus.com/"
             target="_blank"
-            on:click={() =>
-              window.analytics.track("external_resource_clicked", {
-                context: "footer",
-                name: "status",
-                url: "https://www.gitpodstatus.com/",
-              })}
             rel="noopener">Status</FooterLink
           >
         </li>
@@ -80,13 +70,7 @@
           <FooterLink
             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
             target="_blank"
-            rel="noopener"
-            on:click={() =>
-              window.analytics.track("external_resource_clicked", {
-                context: "footer",
-                name: "bug-report",
-                url: "https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md",
-              })}>Report a bug</FooterLink
+            rel="noopener">Report a bug</FooterLink
           >
         </li>
         <li><FooterLink href="/community">Community</FooterLink></li>
@@ -137,12 +121,8 @@
           <FooterLink
             href={link.href}
             target="_blank"
-            on:click={() =>
-              window.analytics.track("social_opened", {
-                context: "footer-logo",
-                platform: link.trackingName,
-              })}
             class="hover:opacity-80"
+            analytics="&lcub"variant":"social_media","context":"{link.alt.toLowerCase()}_visit"&rcub"
           >
             <img src={link.icon} alt={link.alt} height="24" width="24" />
           </FooterLink>

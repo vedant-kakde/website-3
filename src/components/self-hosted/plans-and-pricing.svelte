@@ -1,8 +1,6 @@
 <script lang="ts">
   import { pricingPlans } from "../../contents/self-hosted";
   import PricingBoxes from "../pricing/pricing-boxes.svelte";
-
-  export let trackingContext: String;
 </script>
 
 <header class="tight">
@@ -13,5 +11,5 @@
   </p>
 </header>
 <div class="self-hosted-pricing">
-  <PricingBoxes {trackingContext} {pricingPlans} />
+  <PricingBoxes {pricingPlans} />
 </div>

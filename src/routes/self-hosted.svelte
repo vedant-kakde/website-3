@@ -1,6 +1,5 @@
 <script context="module">
   export const prerender = true;
-  const trackingContext = "self-hosted";
 </script>
 
 <script>
@@ -16,8 +15,8 @@
     title: "Self-Hosted",
   }}
 />
-<PlansAndPricing {trackingContext} />
-<Faqs {trackingContext} />
+<PlansAndPricing />
+<Faqs />
 <Explore
   contents={{
     title: "Explore Gitpod",

@@ -74,11 +74,7 @@
   href={`https://gitpod.io#${githubUrl}`}
   target="_blank"
   aria-label={alt}
-  on:click={() =>
-    window.analytics.track("example_workspace_clicked", {
-      name: trackingName,
-      repo_url: githubUrl,
-    })}
+  data-analytics="&lcub"context":"example_workspace","label":"{trackingName}"&rcub"
   rel="noopener"
   class="project group"
 >

@@ -4,7 +4,6 @@
   import { stringToBeautifiedFragment } from "../../utils/helpers";
 
   export let title;
-  export let trackingContext;
 
   const activeFaq = getContext(faqsKey);
   const fragment = stringToBeautifiedFragment(title);
@@ -13,10 +12,6 @@
     const open = target.open;
     if (open) {
       $activeFaq = title;
-      window.analytics.track("pricing_faq_opened", {
-        context: trackingContext,
-        name: title,
-      });
     }
     // closing the faq that was active, no faq will remain open
     if (isActive && !open) $activeFaq = null;
@@ -111,7 +106,13 @@
   }
 </style>
 
-<details class="faq" open={isActive} on:toggle={setActive} id={fragment}>
+<details
+  class="faq"
+  open={isActive}
+  on:toggle={setActive}
+  id={fragment}
+  data-analytics="&lcub"context":"faq"&rcub"
+>
   <summary class="outline-none">
     <div class="faq__top flex">
       <h3 class="h4 faq__title flex-1">{title}</h3>

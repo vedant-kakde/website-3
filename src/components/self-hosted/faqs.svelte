@@ -2,8 +2,6 @@
   import Section from "../section.svelte";
   import Faqs from "../faqs/faqs.svelte";
   import Faq from "../faqs/faq.svelte";
-
-  export let trackingContext: String;
 </script>
 
 <style lang="scss">
@@ -15,7 +13,7 @@
 <Section>
   <Faqs>
     <h2 class="h1">FAQs</h2>
-    <Faq title="Can I create a team plan?" {trackingContext}>
+    <Faq title="Can I create a team plan?">
       <p>
         Of course! You can use Gitpod Self-Hosted on your own infrastructure for
         free for unlimited users. If you'd like to access additional features
@@ -29,15 +27,12 @@
         <a href="/contact/sales">Get in touch</a> if you have any questions.
       </p>
     </Faq>
-    <Faq title="Can I add more users to my plan at any time?" {trackingContext}>
+    <Faq title="Can I add more users to my plan at any time?">
       <p>
         Yes, you can add as many users as you like to your plan at any time.
       </p>
     </Faq>
-    <Faq
-      title="What is the difference between SaaS and Self-Hosted?"
-      {trackingContext}
-    >
+    <Faq title="What is the difference between SaaS and Self-Hosted?">
       <p>
         If you choose <strong>Gitpod SaaS</strong>, we will manage and host
         Gitpod in the cloud for you. This means minimal setup efforts for you
@@ -53,7 +48,7 @@
         for teams who want to keep full data control or use Gitpod in private networks.
       </p>
     </Faq>
-    <Faq title="How can I install Self-Hosted?" {trackingContext}>
+    <Faq title="How can I install Self-Hosted?">
       <p>
         You can either install <strong>Gitpod Self-Hosted</strong> on
         <strong>Google Cloud Platform</strong> or on
@@ -62,7 +57,7 @@
         information.
       </p>
     </Faq>
-    <Faq title="How can I pay?" {trackingContext}>
+    <Faq title="How can I pay?">
       <p>
         Currently, <strong>Gitpod Self-Hosted</strong> can only be purchased on
         request. Please <a href="/enterprise-license">request a license key</a>
@@ -71,16 +66,13 @@
         invoice.
       </p>
     </Faq>
-    <Faq
-      title="Do you offer discounts for educational institutions?"
-      {trackingContext}
-    >
+    <Faq title="Do you offer discounts for educational institutions?">
       <p>
         Yes, qualified educational institutions may receive a special discount.
         Please <a href="/contact/sales">Contact sales</a>.
       </p>
     </Faq>
-    <Faq title="Still have more questions?" {trackingContext}>
+    <Faq title="Still have more questions?">
       <p>
         We are happy to answer them, please <a href="/contact/support"
           >Get in Touch</a

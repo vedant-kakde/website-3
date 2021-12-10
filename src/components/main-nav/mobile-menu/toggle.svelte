@@ -23,7 +23,7 @@
 
 <button
   on:click={handleToggle}
-  aria-label="Show / hiide nav items"
+  aria-label="Show / hide nav items"
   class="flex justify-center items-center h-6 w-12 rounded-xl bg-black"
 >
   {#if $menuState}

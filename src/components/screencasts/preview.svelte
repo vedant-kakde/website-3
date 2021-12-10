@@ -62,6 +62,7 @@
     screencast.title.slice(0, -3)
   )}"
   class="cast relative flex flex-col flex-nowrap min-w-full text-left mb-micro py-micro pl-x-small z-10 rounded-xl bg-right h-56"
+  data-analytics="&lcub"variant":"preview"&rcub"
 >
   <div class="flex flex-col h-full">
     <data class="text-dark-grey">Screencast {screencastNumberPadded}</data>

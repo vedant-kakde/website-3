@@ -44,7 +44,7 @@
     <h1 class="mb-macro mt-small md:mt-xx-large">Changelog</h1>
     <p class="text-large mb-x-small">Gitpod product improvements and updates</p>
     <p class="buttons-wrapper">
-      <TwitterFollowButton trackingContext="changelog" class="btn-primary" />
+      <TwitterFollowButton class="btn-primary" />
       <a
         href="https://gitpod.io/notifications"
         target="_blank"

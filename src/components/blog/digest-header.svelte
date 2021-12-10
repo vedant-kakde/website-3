@@ -24,6 +24,6 @@
       target="_blank"
       >Signup for the Newsletter
     </a>
-    <TwitterFollowButton trackingContext="Digest" class="btn-secondary" />
+    <TwitterFollowButton class="btn-secondary" />
   </div>
 </header>

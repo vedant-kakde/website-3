@@ -13,10 +13,9 @@
   <a
     {href}
     target="_blank"
-    on:click={() =>
-      window.analytics.track("gitpod_editor_clicked", { context: "docs" })}
     class="inline-flex py-macro px-4 items-center justify-center bg-white rounded-2xl text-btn-small text-black shadow-sm font-semibold hover:bg-off-white focus:bg-off-white"
     rel="noopener"
+    data-analytics="&lcub"variant":"open_in_gitpod"&rcub"
   >
     <span>
       <LogoTextless />

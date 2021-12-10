@@ -34,12 +34,7 @@
 <a
   href={`https://twitter.com/${twitterHandle}/status/${tweetId}`}
   target="_blank"
-  on:click={() =>
-    window.analytics.track("socialproof_clicked", {
-      type: "tweet",
-      url: `https://twitter.com/${twitterHandle}/status/${tweetId}`,
-      position: position,
-    })}
+  data-analytics="&lcub"variant":"social_media","context":"socialproof","label":"{name}"&rcub"
   class="my-2 text-small"
   rel="noreferrer"
 >
