@@ -115,7 +115,9 @@
             href={link.href}
             rel="noreferrer"
             target="_blank"
-            data-analytics="&lcub&quotvariant&quot:&quotsocial_media&quot,&quotcontext&quot:&quot{link.alt.toLowerCase()}_share&quot&rcub"
+            data-analytics={`&lcub"variant":"social_media","context":"` +
+              link.alt.toLowerCase() +
+              `_share"&rcub`}
           >
             <img src={link.icon} alt={link.alt} height="24" width="24" />
           </a>
