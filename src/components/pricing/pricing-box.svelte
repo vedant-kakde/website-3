@@ -88,7 +88,7 @@
   {#if btnHref && btnText}
     <a
       href={btnHref}
-      data-analytics="&lcub&quotcontext&quot:&quot{trackingName}&quot,&quotposition&quot:&quothero&quot&rcub"
+      data-analytics={`{"context":"` + trackingName + `","position":"hero"}`}
       class="btn-cta">{btnText}</a
     >
   {/if}

@@ -69,10 +69,7 @@
 <p class="max-w-md mx-auto">
   Select a Git provider to start with an existing project from any Git context.
 </p>
-<div
-  class="buttons"
-  data-analytics="&lcub&quotcontext&quot:&quotsignup&quot&rcub"
->
+<div class="buttons" data-analytics={`{"context":"signup"}`}>
   <a href="https://gitpod.io/new" class="btn btn--gitlab">
     <svg viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
       <title>GitLab</title>

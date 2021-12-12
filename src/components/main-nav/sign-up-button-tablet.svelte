@@ -9,6 +9,6 @@
 <a
   href="/#get-started"
   on:click
-  data-analytics="&lcub&quotcontext&quot:&quotdashboard&quot&rcub"
+  data-analytics={`{"context":"dashboard"}`}
   class="hidden sm:inline no-underline text-sm mr-micro">Sign Up</a
 >

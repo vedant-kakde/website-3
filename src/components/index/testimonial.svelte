@@ -32,7 +32,9 @@
 <a
   href={`https://twitter.com/${twitterHandle}/status/${tweetId}`}
   target="_blank"
-  data-analytics="&lcub&quotvariant&quot:&quotsocial_media&quot,&quotcontext&quot:&quotsocialproof&quot,&quotlabel&quot:&quot{name}&quot&rcub"
+  data-analytics={`{"variant":"social_media","context":"socialproof","label":"` +
+    name +
+    `"}`}
   class="my-2 text-small"
   rel="noreferrer"
 >

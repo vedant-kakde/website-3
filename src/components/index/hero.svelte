@@ -128,10 +128,7 @@
   }
 </style>
 
-<div
-  class="hero mt-x-small"
-  data-analytics="&lcub&quotposition&quot:&quothero&quot&rcub"
->
+<div class="hero mt-x-small" data-analytics={`{"position":"hero"}`}>
   <div class="hero__text">
     <h1 class="homeh1">
       Always<br /> Ready to Code.

@@ -13,7 +13,7 @@
 
 <div
   class="border-b border-gray-300 border-solid"
-  data-analytics="&lcub&quotposition&quot:&quotannouncement&quot&rcub"
+  data-analytics={`{"position":"announcement"}`}
 >
   <Banner
     storageKey="announcement-{`${startDate}${endDate}`}"

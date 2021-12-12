@@ -74,7 +74,9 @@
   href={`https://gitpod.io#${githubUrl}`}
   target="_blank"
   aria-label={alt}
-  data-analytics="&lcub&quotcontext&quot:&quotexample_workspace&quot,&quotlabel&quot:&quot{trackingName}&quot&rcub"
+  data-analytics={`{"context":"example_workspace","label":"` +
+    { trackingName } +
+    `"}`}
   rel="noopener"
   class="project group"
 >

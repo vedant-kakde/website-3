@@ -111,7 +111,7 @@
   open={isActive}
   on:toggle={setActive}
   id={fragment}
-  data-analytics="&lcub&quotcontext&quot:&quotfaq&quot&rcub"
+  data-analytics={`{"context":"faq"}`}
 >
   <summary class="outline-none">
     <div class="faq__top flex">
