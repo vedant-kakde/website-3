@@ -15,6 +15,8 @@
     Spend less time reviewing pull-requests, on-boarding contributors and more
     time on building great things. <strong>Get a free Open-Source Plan.</strong>
   </p>
-  <div class="btn-conversion mt-x-small mb-medium">Apply now</div>
+  <a href="/contact/support" class="btn-conversion mt-x-small mb-medium"
+    >Apply now</a
+  >
   <Quotes {quotes} />
 </header>

@@ -3,25 +3,20 @@
 </script>
 
 <script>
-  import Section from "../../../components/section.svelte";
-  import Features from "../../../components/features.svelte";
-  import { exploreContents, features } from "../../../contents/startups";
-  import ProgramBenefits from "../../../components/startups/program-benefits.svelte";
+  import {
+    exploreContents,
+    features,
+    programBenefits,
+  } from "../../../contents/startups";
+  import ProgramBenefits from "../../../components/program-benefits.svelte";
   import Header from "../../../components/startups/header.svelte";
   import Eligibility from "../../../components/eligibility.svelte";
   import GitpodVsLocalDevPost from "../../../components/gitpod-vs-local-development-post.svelte";
   import Faqs from "../../../components/startups/faqs.svelte";
   import Explore from "../../../components/explore.svelte";
   import OpenGraph from "../../../components/open-graph.svelte";
+  import SectionFeatures from "../../../components/section-features.svelte";
 </script>
-
-<style lang="postcss">
-  h2 {
-    @media (min-width: 973px) {
-      @apply -mb-16;
-    }
-  }
-</style>
 
 <OpenGraph
   data={{
@@ -33,12 +28,14 @@
 
 <Header />
 
-<Section>
-  <h2 class="text-center">Accelerate your workflow</h2>
-  <Features {features} />
-</Section>
+<SectionFeatures title="Accelerate your workflow" {features} />
 
-<ProgramBenefits />
+<ProgramBenefits secondaryFeatures={programBenefits}>
+  <span slot="text"
+    ><a href="https://bit.ly/3liFICY" target="_blank">Apply now</a> and receive these
+    unique benefits.</span
+  >
+</ProgramBenefits>
 
 <Eligibility
   text="To qualify for Gitpod’s startup program, your company needs to:"

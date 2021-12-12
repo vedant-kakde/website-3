@@ -20,4 +20,5 @@ export type Feature = {
   };
   previewComponent?: any;
   showTheMediaFirstOnMobile?: boolean;
+  headingLevel?: "h2" | "h3";
 };

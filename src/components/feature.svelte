@@ -15,6 +15,7 @@
     image,
     previewComponent,
     showTheMediaFirstOnMobile,
+    headingLevel,
   } = feature;
 </script>
 
@@ -40,7 +41,11 @@
       class="{showTheMediaFirstOnMobile ? 'mt-x-small' : 'mb-x-small'} md:my-0"
     >
       <div class="text-large">
-        <h2 class="h3">{title}</h2>
+        {#if headingLevel === "h2"}
+          <h2 class="h3">{title}</h2>
+        {:else if headingLevel}
+          <h2 class="h3">{title}</h2>
+        {/if}
         <p
           class="mt-micro"
           class:mb-xx-small={moreButton || secondaryButton}

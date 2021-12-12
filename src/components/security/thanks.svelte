@@ -12,7 +12,7 @@
 <header>
   <div class="max-w-lg mx-auto relative">
     <img
-      src="/svg/security/heart.svg"
+      src="/svg/heart.svg"
       alt="Heart"
       class="absolute -top-16 left-1/2 transform -translate-x-1/2 h-10"
     />
