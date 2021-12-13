@@ -6,10 +6,16 @@
 
   export let posts: BlogPost[];
   export let title: string = "More articles";
+  export let text: string = "";
 </script>
 
 <Section>
-  <h2 class="text-center text-h2 mb-small">{title}</h2>
+  <h2 class="text-center text-h2" class:mb-small={!text}>{title}</h2>
+  {#if text}
+    <p class="text-center text-large max-w-4xl mb-small mx-auto">
+      {text}
+    </p>
+  {/if}
   <div class="posts-grid">
     {#each posts as post}
       <div class="posts-grid__item">

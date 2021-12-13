@@ -4,6 +4,7 @@ import type { Quote } from "../types/quote.type";
 import Workspaces from "../components/workspaces.svelte";
 import { linuxSource } from "./terminal";
 import type { Resource } from "../types/resource.type";
+import type { ExploreSection } from "../types/explore-section.type";
 
 export const quotes: Quote[] = [
   {
@@ -164,48 +165,58 @@ export const resources: Resource[] = [
     icon: {
       src: "/svg/opensource/open-vscode.svg",
       alt: "OpenVS Code",
+      transform: "scale(1.5)",
     },
     title: "OpenVS Code",
-    text: "A marketplace for open-source VS Code extensions that can be used for any compatible editor and is natively integrated into Gitpod.",
+    text: "A version of VS Code that runs a server on a remote machine and allows access through a modern web browser.",
     link: {
-      href: "https://github.com/eclipse/openvsx",
+      href: "https://github.com/gitpod-io/openvscode-server",
       text: "View on GitHub",
     },
   },
   {
     icon: {
-      src: "/svg/opensource/openvsx.svg",
-      alt: "Open VSX Registry",
+      src: "/svg/opensource/theia.svg",
+      alt: "Theia",
     },
-    title: "Open VSX Registry",
-    text: "A marketplace for open-source VS Code extensions that can be used for any compatible editor and is natively integrated into Gitpod.",
+    title: "Theia",
+    text: "An extensible framework to develop full-fledged multi-language Cloud & Desktop IDEs which was the default editor before we switched to VS Code.",
     link: {
-      href: "https://github.com/eclipse/openvsx",
+      href: "https://github.com/eclipse-theia/theia",
       text: "View on GitHub",
     },
   },
   {
     icon: {
-      src: "/svg/opensource/openvsx.svg",
-      alt: "Open VSX Registry",
+      src: "/svg/opensource/dazzle.svg",
+      alt: "Dazzle",
     },
-    title: "Open VSX Registry",
-    text: "A marketplace for open-source VS Code extensions that can be used for any compatible editor and is natively integrated into Gitpod.",
+    title: "Dazzle",
+    text: 'An experimental Docker/OCI image builder to build independent layers where a change to one layer does not invalidate the ones sitting "above" it.',
     link: {
-      href: "https://github.com/eclipse/openvsx",
+      href: "https://github.com/gitpod-io/dazzle/",
       text: "View on GitHub",
     },
   },
   {
     icon: {
-      src: "/svg/opensource/openvsx.svg",
-      alt: "Open VSX Registry",
+      src: "/svg/opensource/leeway.svg",
+      alt: "Leeway",
     },
-    title: "Open VSX Registry",
-    text: "A marketplace for open-source VS Code extensions that can be used for any compatible editor and is natively integrated into Gitpod.",
+    title: "Leeway",
+    text: "Leeway is a heavily caching build system for Go, Yarn and Docker projects.",
     link: {
-      href: "https://github.com/eclipse/openvsx",
+      href: "https://github.com/gitpod-io/leeway",
       text: "View on GitHub",
     },
   },
 ];
+
+export const exploreContents: ExploreSection = {
+  title: "Apply Now",
+  description:
+    "Spend less time reviewing pull-requests, onboarding contributors and more time on building great things.",
+  note: "Get a free Open-Source Plan.",
+  link: { text: "Apply Now", href: "" }, // todo
+  useKumquatIllustration: true,
+};

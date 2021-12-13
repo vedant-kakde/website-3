@@ -5,6 +5,7 @@
     acceptContributorsSafely,
     programBenefits,
     resources,
+    exploreContents,
   } from "../../contents/opensource";
   import {
     codeAnywhereFeature,
@@ -17,6 +18,8 @@
   import OpenGraph from "../../components/open-graph.svelte";
   import SectionCommon from "../../components/section-common.svelte";
   import Resources from "../../components/resources.svelte";
+  import Explore from "../../components/explore.svelte";
+  import ActionsSpeakLouderThanWords from "../../components/opensource/actions-speak-louder-than-words.svelte";
 </script>
 
 <OpenGraph
@@ -63,3 +66,7 @@
 >
   <Resources {resources} slot="content" />
 </SectionCommon>
+
+<ActionsSpeakLouderThanWords />
+
+<Explore contents={exploreContents} />
