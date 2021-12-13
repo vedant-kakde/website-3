@@ -3,7 +3,7 @@ import type { Quote } from "../types/quote.type";
 // @ts-ignore
 import Workspaces from "../components/workspaces.svelte";
 import { linuxSource } from "./terminal";
-import type { SecondaryFeature } from "src/types/secondary-feature.type";
+import type { Resource } from "../types/resource.type";
 
 export const quotes: Quote[] = [
   {
@@ -106,7 +106,7 @@ export const acceptContributorsSafely: Feature = {
   },
 };
 
-export const secondaryFeatures: SecondaryFeature[] = [
+export const programBenefits: Resource[] = [
   {
     icon: {
       src: "/svg/media-kit/logo-mark.svg",
@@ -144,5 +144,68 @@ export const faqs = [
   {
     title: "I'm not eligible but still want to use Gitpod",
     text: "TBD...",
+  },
+];
+
+export const resources: Resource[] = [
+  {
+    icon: {
+      src: "/svg/opensource/openvsx.svg",
+      alt: "Open VSX Registry",
+    },
+    title: "Open VSX Registry",
+    text: "A marketplace for open-source VS Code extensions that can be used for any compatible editor and is natively integrated into Gitpod.",
+    link: {
+      href: "https://github.com/eclipse/openvsx",
+      text: "View on GitHub",
+    },
+  },
+  {
+    icon: {
+      src: "/svg/opensource/open-vscode.svg",
+      alt: "OpenVS Code",
+    },
+    title: "OpenVS Code",
+    text: "A marketplace for open-source VS Code extensions that can be used for any compatible editor and is natively integrated into Gitpod.",
+    link: {
+      href: "https://github.com/eclipse/openvsx",
+      text: "View on GitHub",
+    },
+  },
+  {
+    icon: {
+      src: "/svg/opensource/openvsx.svg",
+      alt: "Open VSX Registry",
+    },
+    title: "Open VSX Registry",
+    text: "A marketplace for open-source VS Code extensions that can be used for any compatible editor and is natively integrated into Gitpod.",
+    link: {
+      href: "https://github.com/eclipse/openvsx",
+      text: "View on GitHub",
+    },
+  },
+  {
+    icon: {
+      src: "/svg/opensource/openvsx.svg",
+      alt: "Open VSX Registry",
+    },
+    title: "Open VSX Registry",
+    text: "A marketplace for open-source VS Code extensions that can be used for any compatible editor and is natively integrated into Gitpod.",
+    link: {
+      href: "https://github.com/eclipse/openvsx",
+      text: "View on GitHub",
+    },
+  },
+  {
+    icon: {
+      src: "/svg/opensource/openvsx.svg",
+      alt: "Open VSX Registry",
+    },
+    title: "Open VSX Registry",
+    text: "A marketplace for open-source VS Code extensions that can be used for any compatible editor and is natively integrated into Gitpod.",
+    link: {
+      href: "https://github.com/eclipse/openvsx",
+      text: "View on GitHub",
+    },
   },
 ];

@@ -7,7 +7,7 @@
   import {
     features,
     otherFeatures,
-    secondaryFeatures,
+    secondaryFeatures as resources,
   } from "../contents/home/features";
 
   import Features from "../components/features.svelte";
@@ -18,9 +18,9 @@
   import GetStarted from "../components/index/get-started/index.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import UsedBy from "../components/index/used-by.svelte";
-  import SecondaryFeatures from "../components/secondary-features.svelte";
   import SpinUp from "../components/index/spin-up.svelte";
   import Section from "../components/section.svelte";
+  import Resources from "../components/resources.svelte";
 </script>
 
 <OpenGraph
@@ -40,7 +40,7 @@
 <UsedBy title="Used by 500k+ developers" />
 <Features features={otherFeatures} />
 <Section>
-  <SecondaryFeatures {secondaryFeatures} />
+  <Resources {resources} headingLevel="h2" />
 </Section>
 <Testimonials {testimonials} />
 <GetStarted />

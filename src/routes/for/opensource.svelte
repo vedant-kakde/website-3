@@ -3,7 +3,8 @@
   import {
     onboardContributorsFeature,
     acceptContributorsSafely,
-    secondaryFeatures,
+    programBenefits,
+    resources,
   } from "../../contents/opensource";
   import {
     codeAnywhereFeature,
@@ -13,7 +14,18 @@
   import ProgramBenefits from "../../components/program-benefits.svelte";
   import Eligibility from "../../components/eligibility.svelte";
   import Faqs from "../../components/opensource/faqs.svelte";
+  import OpenGraph from "../../components/open-graph.svelte";
+  import SectionCommon from "../../components/section-common.svelte";
+  import Resources from "../../components/resources.svelte";
 </script>
+
+<OpenGraph
+  data={{
+    description:
+      "Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. Get a free Open-Source Plan.",
+    title: "Gitpod for Open Source",
+  }}
+/>
 
 <Header />
 
@@ -29,7 +41,7 @@
   ]}
 />
 
-<ProgramBenefits {secondaryFeatures} />
+<ProgramBenefits resources={programBenefits} />
 
 <Eligibility
   text="To qualify for Gitpod’s startup program, need to meet one of these criteria:"
@@ -44,3 +56,10 @@
 />
 
 <Faqs />
+
+<SectionCommon
+  title="Open source is in our DNA"
+  text="Gitpod is open-source and so are all the tools we develop and contribute to."
+>
+  <Resources {resources} slot="content" />
+</SectionCommon>

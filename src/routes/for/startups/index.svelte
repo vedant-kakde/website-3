@@ -30,12 +30,10 @@
 
 <SectionFeatures title="Accelerate your workflow" {features} />
 
-<ProgramBenefits secondaryFeatures={programBenefits}>
-  <span slot="text"
-    ><a href="https://bit.ly/3liFICY" target="_blank">Apply now</a> and receive these
-    unique benefits.</span
-  >
-</ProgramBenefits>
+<ProgramBenefits
+  text="<a href='https://bit.ly/3liFICY' target='_blank'>Apply now</a> and receive these unique benefits."
+  resources={programBenefits}
+/>
 
 <Eligibility
   text="To qualify for Gitpod’s startup program, your company needs to:"

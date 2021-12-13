@@ -7,5 +7,5 @@
 </script>
 
 {#each features as feature}
-  <Feature {feature} />
+  <Feature feature={{ ...feature, headingLevel }} />
 {/each}

@@ -1,15 +1,12 @@
 <script lang="ts">
-  import SecondaryFeatures from "./secondary-features.svelte";
-  import type { SecondaryFeature } from "../types/secondary-feature.type";
-  import Section from "./section.svelte";
+  import type { Resource } from "../types/resource.type";
+  import Resources from "./resources.svelte";
+  import SectionCommon from "./section-common.svelte";
   export let title = "Program benefits";
-  export let secondaryFeatures: SecondaryFeature[];
+  export let text: string = "";
+  export let resources: Resource[];
 </script>
 
-<Section class="text-center">
-  <h2>{title}</h2>
-  <p class="text-large mb-small">
-    <slot name="text" />
-  </p>
-  <SecondaryFeatures {secondaryFeatures} headingLevel="h3" />
-</Section>
+<SectionCommon {title} {text}>
+  <Resources {resources} slot="content" />
+</SectionCommon>

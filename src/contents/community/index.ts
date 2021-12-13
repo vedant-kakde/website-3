@@ -1,10 +1,11 @@
-import type { ContactAction as Action } from "../../types/contact-action.type";
 import type { Feature } from "../../types/feature.type";
 import type { Resource } from "../../types/resource.type";
 
 export const primaryCtas: Resource[] = [
   {
-    icon: "/svg/community/discord.svg",
+    icon: {
+      src: "/svg/community/discord.svg",
+    },
     title: "Discord Chat",
     text: "Hang out, collaborate and connect with the Gitpod community, take part in live coding sessions and more!",
     link: {
@@ -13,7 +14,9 @@ export const primaryCtas: Resource[] = [
     },
   },
   {
-    icon: "/svg/community/twitter.svg",
+    icon: {
+      src: "/svg/community/twitter.svg",
+    },
     title: "Twitter",
     text: "Stay up to date on the latest Gitpod news and help us spread the Gitpod love.",
     link: {
@@ -22,7 +25,9 @@ export const primaryCtas: Resource[] = [
     },
   },
   {
-    icon: "/svg/community/github.svg",
+    icon: {
+      src: "/svg/community/github.svg",
+    },
     title: "GitHub",
     text: "Do you want to contribute to Gitpod? Or need to report a bug?",
     link: {
@@ -31,7 +36,9 @@ export const primaryCtas: Resource[] = [
     },
   },
   {
-    icon: "/svg/community/youtube.svg",
+    icon: {
+      src: "/svg/community/youtube.svg",
+    },
     title: "YouTube",
     text: "Prefer watching videos and previous livestreams to learn about Gitpod?",
     link: {
@@ -40,7 +47,9 @@ export const primaryCtas: Resource[] = [
     },
   },
   {
-    icon: "/svg/community/reddit.svg",
+    icon: {
+      src: "/svg/community/reddit.svg",
+    },
     title: "Reddit",
     text: " Do you have Gitpod content that you'd like to share?",
     link: {
@@ -68,7 +77,7 @@ export const contributeToGitpod: Feature = {
   },
 };
 
-export const letsCollaborateActions: Action[] = [
+export const letsCollaborateActions: Resource[] = [
   {
     title: "Author a blog post",
     text: "Do you have a cool story to share related to Gitpod? Publish a guest post on our blog.",

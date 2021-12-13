@@ -41,9 +41,9 @@
       class="{showTheMediaFirstOnMobile ? 'mt-x-small' : 'mb-x-small'} md:my-0"
     >
       <div class="text-large">
-        {#if headingLevel === "h2"}
-          <h2 class="h3">{title}</h2>
-        {:else if headingLevel}
+        {#if headingLevel === "h3"}
+          <h3 class="h3">{title}</h3>
+        {:else}
           <h2 class="h3">{title}</h2>
         {/if}
         <p
