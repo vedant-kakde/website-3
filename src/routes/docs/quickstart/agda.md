@@ -7,7 +7,7 @@ title: Agda template
   export const prerender = true;
 </script>
 
-# Nix Quickstart
+# Agda Quickstart
 
 Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Agda](https://github.com/gitpod-io/template-agda) template.
 
