@@ -16,6 +16,7 @@ const mapQuickstart = (
 
 const quickstartItems = readable(
   [
+    mapQuickstart("Agda", "quickstart/agda", false),
     mapQuickstart("C", "quickstart/c", false),
     mapQuickstart("C++", "quickstart/cpp", false),
     mapQuickstart("Clojure", "quickstart/clojure", false),
