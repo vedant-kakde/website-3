@@ -5,15 +5,19 @@ import Workspaces from "../components/workspaces.svelte";
 import { linuxSource } from "./terminal";
 import type { Resource } from "../types/resource.type";
 import type { ExploreSection } from "../types/explore-section.type";
+import {
+  codeAnywhereFeature,
+  multiTrackDevelopmentFeature,
+} from "./home/features";
 
 export const quotes: Quote[] = [
   {
-    text: "Gitpod helps onboard new contributors to my open-source project in seconds and removes any issues related to configurations of dev environments",
-    author: "xyz",
-    jobTitle: "Chief Engineer @xyz",
+    text: "I'm using Gitpod almost daily when trying out new technologies, working on OSS PRs/repros or when giving demos. Welcome to the promised land of cloud IDEs.",
+    author: "Johannes Schickling",
+    jobTitle: "Co-founder of Prisma",
     companyLogo: {
-      src: "/svg/opensource/gitlab.svg",
-      alt: "GitLab",
+      src: "/svg/opensource/prisma.svg",
+      alt: "Prisma",
     },
     img: {
       src: "/images/opensource/4-geeks.png",
@@ -21,12 +25,12 @@ export const quotes: Quote[] = [
     },
   },
   {
-    text: "TBD...",
-    author: "xyz",
-    jobTitle: "Chief Engineer @xyz",
+    text: `With Gitpod, I can review at any pull request in a full coding environment where I can edit, build, and test the contribution, by just prepending "http://gitpod.io#". Gitpod makes the pull-request review process so much nicer for me and I no longer have to do any local checkouts.`,
+    author: "Julius Volz",
+    jobTitle: "Co-founder of Prometheus",
     companyLogo: {
-      src: "/svg/opensource/gitlab.svg",
-      alt: "GitLab",
+      src: "/svg/opensource/prometheus.svg",
+      alt: "Prometheus",
     },
     img: {
       src: "/images/opensource/4-geeks.png",
@@ -34,51 +38,12 @@ export const quotes: Quote[] = [
     },
   },
   {
-    text: "Gitpod helps onboard new contributors to my open-source project in seconds and removes any issues related to configurations of dev environments",
-    author: "xyz",
-    jobTitle: "Chief Engineer @xyz",
+    text: "Gitpod totally changed the development velocity for RedwoodJS—it removed any issues related to configurations of dev environments and made it incredibly easy to contribute. Reviewing pull requests is delightful because they are prebuilt and ready for review!",
+    author: "Tom Preston-Werner",
+    jobTitle: "Co-founder RedwoodJS",
     companyLogo: {
-      src: "/svg/opensource/gitlab.svg",
-      alt: "GitLab",
-    },
-    img: {
-      src: "/images/opensource/4-geeks.png",
-      alt: "",
-    },
-  },
-  {
-    text: "Gitpod helps onboard new contributors to my open-source project in seconds and removes any issues related to configurations of dev environments",
-    author: "xyz",
-    jobTitle: "Chief Engineer @xyz",
-    companyLogo: {
-      src: "/svg/opensource/gitlab.svg",
-      alt: "GitLab",
-    },
-    img: {
-      src: "/images/opensource/4-geeks.png",
-      alt: "",
-    },
-  },
-  {
-    text: "Gitpod helps onboard new contributors to my open-source project in seconds and removes any issues related to configurations of dev environments",
-    author: "xyz",
-    jobTitle: "Chief Engineer @xyz",
-    companyLogo: {
-      src: "/svg/opensource/gitlab.svg",
-      alt: "GitLab",
-    },
-    img: {
-      src: "/images/opensource/4-geeks.png",
-      alt: "",
-    },
-  },
-  {
-    text: "Gitpod helps onboard new contributors to my open-source project in seconds and removes any issues related to configurations of dev environments",
-    author: "xyz",
-    jobTitle: "Chief Engineer @xyz",
-    companyLogo: {
-      src: "/svg/opensource/gitlab.svg",
-      alt: "GitLab",
+      src: "/svg/opensource/redwood.svg",
+      alt: "RedwoodJS",
     },
     img: {
       src: "/images/opensource/4-geeks.png",
@@ -87,25 +52,36 @@ export const quotes: Quote[] = [
   },
 ];
 
-export const onboardContributorsFeature: Feature = {
-  title: "Onboard contributors in seconds",
-  paragraph:
-    "Often the problem with building a community of contributors is the project setup friction. With Gitpod, people will be able to contribute to your project with a single click. Tedious environment setups, contributing guides and maintenance activities no long exist.",
-  previewComponent: Workspaces,
-};
-
-export const acceptContributorsSafely: Feature = {
-  title: "Accept contributions safely",
-  paragraph:
-    "With Gitpod, no packages or dependencies are downloaded to onto your devices which contains security incidents and inhibits malicious actors pivoting towards completely compromising your workstation.",
-  terminal: {
-    source: linuxSource,
-    dark: true,
-    shadow: false,
-    narrow: true,
-    skipToEnd: true,
+export const features: Feature[] = [
+  {
+    title: "Onboard contributors in seconds",
+    paragraph:
+      "Often the problem with building a community of contributors is the project setup friction. With Gitpod, people will be able to contribute to your project with a single click. Tedious environment setups, contributing guides and maintenance activities no long exist.",
+    previewComponent: Workspaces,
   },
-};
+  {
+    ...codeAnywhereFeature,
+    paragraph:
+      "Often the problem with building a community of contributors is the project setup friction. With Gitpod, people will be able to contribute to your project with a single click. Tedious environment setups, contributing guides and maintenance activities no long exist.",
+  },
+  {
+    ...multiTrackDevelopmentFeature,
+    paragraph:
+      "You can have multiple workspaces running at the same time. Start your day by opening one workspace per pull-request needs reviewing. Thanks to pre-builds they are already compiled and ready to go.",
+  },
+  {
+    title: "Accept contributions safely",
+    paragraph:
+      "With Gitpod, no packages or dependencies are downloaded to onto your devices which contains security incidents and inhibits malicious actors pivoting towards completely compromising your workstation.",
+    terminal: {
+      source: linuxSource,
+      dark: true,
+      shadow: false,
+      narrow: true,
+      skipToEnd: true,
+    },
+  },
+];
 
 export const programBenefits: Resource[] = [
   {
@@ -144,7 +120,7 @@ export const faqs = [
   },
   {
     title: "I'm not eligible but still want to use Gitpod",
-    text: "TBD...",
+    text: "We have a very generous <a href='/pricing'>free plan</a> for up to 50h a month, including private repos.",
   },
 ];
 

@@ -6,7 +6,6 @@ image: dev-env-gilbert.png
 slug: dev-env-as-code
 subtitle: How to streamline developer onboarding
 title: Dev environments as code
-url: dev-env-gilbert.gif
 ---
 
 <script context="module">

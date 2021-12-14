@@ -41,7 +41,7 @@
         </li>
         <li>
           <FooterLink href="/for/opensource" class="flex items-center"
-            >Gitpod for Opensource</FooterLink
+            >Gitpod for Open Source</FooterLink
           >
         </li>
         <li>

@@ -1,16 +1,12 @@
 <script>
   import Header from "../../components/opensource/header.svelte";
   import {
-    onboardContributorsFeature,
-    acceptContributorsSafely,
     programBenefits,
     resources,
     exploreContents,
+    features,
   } from "../../contents/opensource";
-  import {
-    codeAnywhereFeature,
-    multiTrackDevelopmentFeature,
-  } from "../../contents/home/features";
+
   import SectionFeatures from "../../components/section-features.svelte";
   import ProgramBenefits from "../../components/program-benefits.svelte";
   import Eligibility from "../../components/eligibility.svelte";
@@ -36,12 +32,7 @@
   title="Be always ready-to-code"
   text="Spin up fresh, automated dev environments for each task, in the cloud, in
   seconds."
-  features={[
-    onboardContributorsFeature,
-    codeAnywhereFeature,
-    multiTrackDevelopmentFeature,
-    acceptContributorsSafely,
-  ]}
+  {features}
 />
 
 <ProgramBenefits resources={programBenefits} />
