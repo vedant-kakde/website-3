@@ -491,9 +491,9 @@ export const ides: Ide[] = [
     icon: "rubymine.svg",
   },
   {
-    name: "clion",
-    availibility: "soon",
-    label: "CLion",
-    icon: "clion.svg",
+    name: "phpstorm",
+    availibility: "beta",
+    label: "PhpStorm",
+    icon: "phpstorm.svg",
   },
 ];

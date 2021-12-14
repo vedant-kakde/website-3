@@ -10,7 +10,7 @@
     {#if showIcon}
       <div class="ml-4 flex-initial" aria-hidden="true">
         <img
-          class="transform -rotate-90"
+          class="-rotate-90"
           src="/arrow.svg"
           alt="See more"
           width="12"

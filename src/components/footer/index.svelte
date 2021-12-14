@@ -14,11 +14,6 @@
       icon: "/svg/brands/github.svg",
     },
     {
-      href: "https://community.gitpod.io/",
-      alt: "Discourse",
-      icon: "/svg/brands/discourse.svg",
-    },
-    {
       href: "https://www.gitpod.io/chat",
       alt: "Discord",
       icon: "/svg/brands/discord.svg",

@@ -1,24 +1,9 @@
-const { tailwindExtractor } = require("tailwindcss/lib/lib/purgeUnusedStyles");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: {
-    // mode: "all",
-    content: ["./src/**/*.svelte", "./src/contents/*.ts"],
-    options: {
-      defaultExtractor: (content) => [
-        // If this stops working, please open an issue at https://github.com/svelte-add/tailwindcss/issues rather than bothering Tailwind Labs about it
-        ...tailwindExtractor(content),
-        // Match Svelte class: directives (https://github.com/tailwindlabs/tailwindcss/discussions/1731)
-        ...[...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(
-          ([_match, group, ..._rest]) => group
-        ),
-      ],
-      // we have to safelist these because there are dynamically added to the dom via JS and for prod tailwind ships the classes via analyzing the markup without doing so these won't make there way to prod unless used somewhere on the markup.
-      safelist: ["overflow-y-hidden", "mr-4"],
-    },
-  },
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/**/*.svelte", "./src/contents/*.ts"],
+  // we have to safelist these because there are dynamically added to the dom via JS and for prod tailwind ships the classes via analyzing the markup without doing so these won't make there way to prod unless used somewhere on the markup.
+  safelist: ["overflow-y-hidden", "mr-4"],
   theme: {
     extend: {
       screens: {
@@ -111,14 +96,6 @@ module.exports = {
     minHeight: {
       13: "3.375rem",
       ...defaultTheme.minHeight,
-    },
-  },
-  variants: {
-    extend: {
-      dropShadow: ["hover", "focus"],
-      grayscale: ["hover"],
-      opacity: ["hover"],
-      padding: ["last"],
     },
   },
   plugins: [],

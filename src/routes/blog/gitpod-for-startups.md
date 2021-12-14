@@ -43,6 +43,6 @@ Your startup is eligible if it was founded less than 3y ago, has raised a maximu
 
 ## How do I apply?
 
-Give it a try and fill out the [application form](https://bit.ly/3anDmwd). Once you’re part of the program, you’ll get the chance for a personal onboarding call with our community engineers. Check out our [website](/for/startups) for more details.
+Check out our [website](/for/startups) for more details and the link to the application form. Once you’re part of the program, you’ll get the chance for a personal onboarding call with our community engineers.
 
 Want to share program details with your colleagues or other startups? This [Notion page](https://bit.ly/Gitpod-for-startups-notion) might be handy.

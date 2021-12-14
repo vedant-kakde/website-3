@@ -14,6 +14,7 @@
     terminal,
     image,
     previewComponent,
+    showTheMediaFirstOnMobile,
   } = feature;
 </script>
 
@@ -31,9 +32,13 @@
 
 <Section class="feature-container-section">
   <div
-    class="feature md:grid justify-center items-center md:grid-cols-2 lg:gap-32 md:gap-small flex flex-col"
+    class="feature md:grid justify-center items-center md:grid-cols-2 lg:gap-32 md:gap-small flex {showTheMediaFirstOnMobile
+      ? 'flex-col-reverse'
+      : 'flex-col'}"
   >
-    <div class="mb-x-small md:my-0">
+    <div
+      class="{showTheMediaFirstOnMobile ? 'mt-x-small' : 'mb-x-small'} md:my-0"
+    >
       <div class="text-large">
         <h2 class="h3">{title}</h2>
         <p

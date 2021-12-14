@@ -37,7 +37,7 @@
   <Features {features} />
 </div>
 <SectionScreenshot />
-<UsedBy title="Used by 400k+ developers" />
+<UsedBy title="Used by 500k+ developers" />
 <Features features={otherFeatures} />
 <Section>
   <SecondaryFeatures {secondaryFeatures} />

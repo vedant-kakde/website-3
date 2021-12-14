@@ -13,15 +13,6 @@ export const primaryCtas: Resource[] = [
     },
   },
   {
-    icon: "/svg/community/discourse.svg",
-    title: "Discourse Forum",
-    text: " Our community discussion forum, perfect for asking questions that would benefit others too.",
-    link: {
-      href: "https://community.gitpod.io",
-      text: "View forum",
-    },
-  },
-  {
     icon: "/svg/community/twitter.svg",
     title: "Twitter",
     text: "Stay up to date on the latest Gitpod news and help us spread the Gitpod love.",

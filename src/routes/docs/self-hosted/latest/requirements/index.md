@@ -33,7 +33,7 @@ If you are considering purchasing a commerical license for Gitpod Self-Hosted an
 
 We strongly recommend deploying a dedicated kubernetes cluster just for Gitpod Self-Hosted.
 
-Here are the minimumn requirements:
+Here are the minimum requirements:
 
 - Either Ubuntu 18.04 with ≥ v5.4 kernel or Ubuntu 20.04 with ≥ v5.4 kernel.
 - Calico for the networking overlay and network policy.
