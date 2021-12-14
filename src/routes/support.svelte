@@ -7,7 +7,7 @@
   import Cta from "../components/support/cta.svelte";
   import PopularArticles from "../components/support/popular-articles.svelte";
   import OpenGraph from "../components/open-graph.svelte";
-  import { resources } from "../contents/support";
+  import { cards } from "../contents/support";
   import Resources from "../components/resources.svelte";
   import SectionCommon from "../components/section-common.svelte";
 </script>
@@ -22,6 +22,6 @@
 <Header />
 <Cta />
 <SectionCommon title="Helpful Resources">
-  <Resources {resources} slot="content" />
+  <Resources {cards} slot="content" />
 </SectionCommon>
 <PopularArticles />

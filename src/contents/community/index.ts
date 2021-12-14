@@ -1,7 +1,7 @@
 import type { Feature } from "../../types/feature.type";
-import type { Resource } from "../../types/resource.type";
+import type { Card } from "../../types/card.type";
 
-export const primaryCtas: Resource[] = [
+export const primaryCtas: Card[] = [
   {
     icon: {
       src: "/svg/community/discord.svg",
@@ -77,7 +77,7 @@ export const contributeToGitpod: Feature = {
   },
 };
 
-export const letsCollaborateActions: Resource[] = [
+export const letsCollaborateActions: Card[] = [
   {
     title: "Author a blog post",
     text: "Do you have a cool story to share related to Gitpod? Publish a guest post on our blog.",

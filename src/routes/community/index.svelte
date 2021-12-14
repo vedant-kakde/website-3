@@ -32,7 +32,7 @@
   text="Would you like to collaborate? We’re excited to hear your ideas. Get in
   contact."
 >
-  <Resources {resources} slot="content" />
+  <Resources cards={resources} slot="content" />
 </SectionCommon>
 
 <Heros />

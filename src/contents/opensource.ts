@@ -3,7 +3,7 @@ import type { Quote } from "../types/quote.type";
 // @ts-ignore
 import Workspaces from "../components/workspaces.svelte";
 import { linuxSource } from "./terminal";
-import type { Resource } from "../types/resource.type";
+import type { Card } from "../types/card.type";
 import type { ExploreSection } from "../types/explore-section.type";
 import {
   codeAnywhereFeature,
@@ -83,7 +83,7 @@ export const features: Feature[] = [
   },
 ];
 
-export const programBenefits: Resource[] = [
+export const programBenefits: Card[] = [
   {
     icon: {
       src: "/svg/media-kit/logo-mark.svg",
@@ -124,7 +124,7 @@ export const faqs = [
   },
 ];
 
-export const resources: Resource[] = [
+export const cards: Card[] = [
   {
     icon: {
       src: "/svg/opensource/openvsx.svg",

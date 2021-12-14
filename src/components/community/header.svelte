@@ -1,5 +1,5 @@
 <script>
-  import { primaryCtas as resources } from "../../contents/community/index";
+  import { primaryCtas as cards } from "../../contents/community/index";
   import Resources from "../resources.svelte";
 </script>
 
@@ -15,5 +15,5 @@
     Welcome! Our community is at the centre of everything at Gitpod. We're
     excited to have you join us 🧡
   </p>
-  <Resources {resources} />
+  <Resources {cards} />
 </header>

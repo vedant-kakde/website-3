@@ -1,7 +1,7 @@
 import type { Article } from "../types/article.type";
-import type { Resource } from "../types/resource.type";
+import type { Card } from "../types/card.type";
 
-export const resources: Resource[] = [
+export const cards: Card[] = [
   {
     title: "Getting Started",
     text: "This page helps you understand how to provide a configuration for your project.",

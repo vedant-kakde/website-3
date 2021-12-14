@@ -2,7 +2,7 @@
   import Header from "../../components/opensource/header.svelte";
   import {
     programBenefits,
-    resources,
+    cards,
     exploreContents,
     features,
   } from "../../contents/opensource";
@@ -35,7 +35,7 @@
   {features}
 />
 
-<ProgramBenefits resources={programBenefits} />
+<ProgramBenefits cards={programBenefits} />
 
 <Eligibility
   text="To qualify for Gitpod’s startup program, need to meet one of these criteria:"
@@ -55,7 +55,7 @@
   title="Open source is in our DNA"
   text="Gitpod is open-source and so are all the tools we develop and contribute to."
 >
-  <Resources {resources} slot="content" />
+  <Resources {cards} slot="content" />
 </SectionCommon>
 
 <ActionsSpeakLouderThanWords />

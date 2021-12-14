@@ -2,7 +2,7 @@ import type { Feature } from "../../types/feature.type";
 import { terminalSource, linuxSource } from "../terminal";
 // @ts-ignore
 import Workspaces from "../../components/workspaces.svelte";
-import type { Resource } from "../../types/resource.type";
+import type { Card } from "../../types/card.type";
 
 export const multiTrackDevelopmentFeature: Feature = {
   title: "Multi track development with ease",
@@ -91,7 +91,7 @@ export const otherFeatures: Feature[] = [
   },
 ];
 
-export const secondaryFeatures: Resource[] = [
+export const secondaryFeatures: Card[] = [
   {
     icon: {
       src: "/svg/features/open-source.svg",

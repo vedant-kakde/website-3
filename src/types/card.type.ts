@@ -1,4 +1,4 @@
-export type Resource = {
+export type Card = {
   icon?: {
     src: string;
     alt?: string;

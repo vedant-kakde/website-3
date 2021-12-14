@@ -6,7 +6,7 @@
   import {
     exploreContents,
     features,
-    programBenefits,
+    programBenefits as cards,
   } from "../../../contents/startups";
   import ProgramBenefits from "../../../components/program-benefits.svelte";
   import Header from "../../../components/startups/header.svelte";
@@ -32,7 +32,7 @@
 
 <ProgramBenefits
   text="<a href='https://bit.ly/3liFICY' target='_blank'>Apply now</a> and receive these unique benefits."
-  resources={programBenefits}
+  {cards}
 />
 
 <Eligibility

@@ -7,7 +7,7 @@
   import {
     features,
     otherFeatures,
-    secondaryFeatures as resources,
+    secondaryFeatures as cards,
   } from "../contents/home/features";
 
   import Features from "../components/features.svelte";
@@ -40,7 +40,7 @@
 <UsedBy title="Used by 500k+ developers" />
 <Features features={otherFeatures} />
 <Section>
-  <Resources {resources} headingLevel="h2" />
+  <Resources {cards} headingLevel="h2" />
 </Section>
 <Testimonials {testimonials} />
 <GetStarted />
