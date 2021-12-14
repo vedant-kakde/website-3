@@ -63,7 +63,7 @@
             <button
               on:click|preventDefault={() => (selectedEmotion = index + 1)}
               class:selected={selectedEmotion === index + 1}
-              class="filter grayscale transform transition duration-150 hover:grayscale-0 hover:scale-150"
+              class="grayscale transition duration-150 hover:grayscale-0 hover:scale-150"
             >
               <img
                 src="/images/docs/feedback-widget/{index + 1}.svg"

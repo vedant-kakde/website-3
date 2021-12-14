@@ -3,6 +3,7 @@
     interface Window {
       analytics: any;
       doNotTrack: any;
+      localStorage: any;
     }
   }
 </script>
@@ -10,6 +11,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { page } from "$app/stores";
+  import Cookies from "js-cookie";
 
   const writeKey =
     typeof window !== "undefined" &&
@@ -26,6 +28,12 @@
       navigator.doNotTrack === "yes");
 
   onMount(async () => {
+    // Override anonymous ID in local storage if it exists in Cookie
+    // This is done in order to guarantee the same anonymous_id is used by dashboard and website
+    const current_id = Cookies.get("ajs_anonymous_id");
+    if (current_id) {
+      window.localStorage.setItem("ajs_anonymous_id", current_id);
+    }
     // Create a queue, but don't obliterate an existing one!
     var analytics = (window.analytics = window.analytics || []);
     // If the real analytics.js is already on the page return.

@@ -130,9 +130,6 @@
     }
   }
 
-  .flex-grow {
-    flex-grow: 1;
-  }
   .text-center {
     text-align: center;
   }
@@ -175,7 +172,7 @@
     </div>
     <div class="text-box">
       <h2 class="max-w-30rem">Ready in a flash</h2>
-      <p class="text-large max-w-30rem flex-grow">
+      <p class="text-large max-w-30rem grow">
         Gitpod removes long init and build times by continuously pre-building
         workspaces for your project. Thereby it allows you to start coding or
         debugging immediately, from any context, at any time.
@@ -475,7 +472,7 @@
 <div class="cards double mt-1rem items-stretch">
   <div class="card p-4rem">
     <h2 class="h3">Automation-first</h2>
-    <p class="flex-grow">
+    <p class="grow">
       Simply add your build command into a .gitpod.yml file and let Gitpod do
       the heavy-lifting. Once you’ve experienced the freedom of ephemeral
       workspaces, you’ll never want to go back to long-lived,
@@ -487,7 +484,7 @@
   </div>
   <div class="card p-4rem">
     <h2 class="h3">Code in a carbon-neutral workspace</h2>
-    <p class="flex-grow">
+    <p class="grow">
       Not only is Gitpod more resource-efficient but it also runs on 100%
       carbon-neutral cloud servers (GCP). All the power, with a lower cost to
       our planet.

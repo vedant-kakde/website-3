@@ -1,5 +1,5 @@
 ---
-section: references
+section: troubleshooting
 title: Troubleshooting
 ---
 

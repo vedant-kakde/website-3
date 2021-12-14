@@ -169,13 +169,13 @@
     margin-top: -0.6em;
     transform-origin: center left;
     animation: strikethrough 0.6s 0.4s cubic-bezier(0.55, 0, 0.1, 1) 1 forwards;
-    transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: 0.4s cubic-bezier(0.55, 0, 0.1, 1);
   }
 
   .disabled {
     @apply transition-none;
     &::after {
-      @apply transition-none animate-none bg-light-grey transform scale-100;
+      @apply transition-none animate-none bg-light-grey scale-100;
     }
   }
 

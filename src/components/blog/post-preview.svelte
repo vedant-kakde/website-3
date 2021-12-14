@@ -94,7 +94,7 @@
           <Avatars
             usernames={post.author}
             socialMediaLinks={authorSocialMediaLinks}
-            socialMediaLinkClasses="filter hover:drop-shadow"
+            socialMediaLinkClasses="hover:drop-shadow"
           />
         {/if}
         {#if post.date}

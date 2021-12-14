@@ -3,4 +3,4 @@
   export let w;
 </script>
 
-<div class={`bg-yellow-400 ${h} ${w}`} />
+<div class={`bg-amber-400 ${h} ${w}`} />

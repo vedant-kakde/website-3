@@ -108,7 +108,7 @@
       </div>
       {#if availibility}
         <div
-          class="hidden absolute -top-3 md:-top-1 left-1/2 transform -translate-x-1/2 md:transform-none md:-left-10 lg:left-3/4 items-center justify-center h-4 w-10 sm:h-5 sm:w-14 text-xs font-semibold text-gray-900 rounded-md sm:rounded-lg shadow-light"
+          class="hidden absolute -top-3 md:-top-1 left-1/2 -translate-x-1/2 md:transform-none md:-left-10 lg:left-3/4 items-center justify-center h-4 w-10 sm:h-5 sm:w-14 text-xs font-semibold text-gray-900 rounded-md sm:rounded-lg shadow-light"
           class:bg-pink-900={availibility === "soon"}
           class:bg-orange-700={availibility === "beta"}
         >
