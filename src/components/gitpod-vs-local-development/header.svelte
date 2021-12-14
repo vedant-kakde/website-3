@@ -1,6 +1,6 @@
 <script>
   import { benefits } from "../../contents/gitpod-vs-local-development";
-  import Benefit from "../benefit.svelte";
+  import CardSmall from "../card/card-small.svelte";
 </script>
 
 <style lang="postcss">
@@ -28,7 +28,7 @@
   </p>
   <div class="grid gap-micro justify-center mt-small">
     {#each benefits as benefit}
-      <Benefit {benefit} />
+      <CardSmall card={benefit} />
     {/each}
   </div>
 </header>

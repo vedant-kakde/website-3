@@ -1,7 +1,7 @@
-import type { Benefit } from "../types/benefit.type";
+import type { Card } from "../types/card.type";
 import type { Intro } from "../types/intro.type";
 
-export const benefits: Benefit[] = [
+export const benefits: Card[] = [
   {
     icon: {
       src: "/svg/gitpod-vs-local-development/developer-experience.svg",

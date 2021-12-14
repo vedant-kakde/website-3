@@ -1,7 +1,7 @@
 <script lang="ts">
   import Section from "../section.svelte";
-  import Benefit from "../benefit.svelte";
   import { benefits } from "../../contents/community/hereos";
+  import CardSmall from "../card/card-small.svelte";
 </script>
 
 <style lang="postcss">
@@ -23,7 +23,7 @@
   </p>
   <div class="grid gap-micro justify-center mx-auto mt-small">
     {#each benefits as benefit}
-      <Benefit {benefit} />
+      <CardSmall card={benefit} />
     {/each}
   </div>
 </Section>

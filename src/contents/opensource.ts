@@ -131,9 +131,33 @@ export const cards: Card[] = [
       alt: "Open VSX Registry",
     },
     title: "Open VSX Registry",
-    text: "A marketplace for open-source VS Code extensions that can be used for any compatible editor and is natively integrated into Gitpod.",
+    text: "A marketplace for open-source VS Code extensions that can be used for any compatible editor.",
     link: {
       href: "https://github.com/eclipse/openvsx",
+      text: "View on GitHub",
+    },
+  },
+  {
+    icon: {
+      src: "/svg/opensource/leeway.svg",
+      alt: "Leeway",
+    },
+    title: "Leeway",
+    text: "Leeway is a heavily caching build system for Go, Yarn and Docker projects.",
+    link: {
+      href: "https://github.com/gitpod-io/leeway",
+      text: "View on GitHub",
+    },
+  },
+  {
+    icon: {
+      src: "/svg/opensource/theia.svg",
+      alt: "Theia",
+    },
+    title: "Theia",
+    text: "An extensible framework to develop full-fledged multi-language Cloud & Desktop IDEs.",
+    link: {
+      href: "https://github.com/eclipse-theia/theia",
       text: "View on GitHub",
     },
   },
@@ -152,37 +176,13 @@ export const cards: Card[] = [
   },
   {
     icon: {
-      src: "/svg/opensource/theia.svg",
-      alt: "Theia",
-    },
-    title: "Theia",
-    text: "An extensible framework to develop full-fledged multi-language Cloud & Desktop IDEs which was the default editor before we switched to VS Code.",
-    link: {
-      href: "https://github.com/eclipse-theia/theia",
-      text: "View on GitHub",
-    },
-  },
-  {
-    icon: {
       src: "/svg/opensource/dazzle.svg",
       alt: "Dazzle",
     },
     title: "Dazzle",
-    text: 'An experimental Docker/OCI image builder to build independent layers where a change to one layer does not invalidate the ones sitting "above" it.',
+    text: 'An Docker/OCI image builder to build independent layers where a change to one layer does not invalidate the ones sitting "above" it.',
     link: {
       href: "https://github.com/gitpod-io/dazzle/",
-      text: "View on GitHub",
-    },
-  },
-  {
-    icon: {
-      src: "/svg/opensource/leeway.svg",
-      alt: "Leeway",
-    },
-    title: "Leeway",
-    text: "Leeway is a heavily caching build system for Go, Yarn and Docker projects.",
-    link: {
-      href: "https://github.com/gitpod-io/leeway",
       text: "View on GitHub",
     },
   },

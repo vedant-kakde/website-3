@@ -11,10 +11,12 @@
   export let titleClassNames: "h4" | "h5" = "h4";
   export let iconClassNames: string = "h-16 w-20";
   export let btnClassNames: string = "btn-cta";
+  export let styles: string = "";
 </script>
 
 <div
-  class="flex flex-col justify-between items-center lg:max-w-sm bg-off-white shadow-normal text-center {clazz}"
+  class="flex flex-col justify-between items-center max-w-sm bg-off-white shadow-normal text-center {clazz}"
+  style={styles}
 >
   <div>
     {#if icon}

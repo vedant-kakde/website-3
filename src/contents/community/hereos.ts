@@ -1,7 +1,7 @@
-import type { Benefit } from "src/types/benefit.type";
+import type { Card } from "src/types/card.type";
 import type { ExploreSection } from "src/types/explore-section.type";
 
-export const benefits: Benefit[] = [
+export const benefits: Card[] = [
   {
     icon: {
       src: "/svg/heroes/oppritunities-to-grow.svg",

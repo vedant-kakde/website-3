@@ -13,9 +13,9 @@
   import Faqs from "../../components/opensource/faqs.svelte";
   import OpenGraph from "../../components/open-graph.svelte";
   import SectionCommon from "../../components/section-common.svelte";
-  import Resources from "../../components/resources.svelte";
   import Explore from "../../components/explore.svelte";
   import ActionsSpeakLouderThanWords from "../../components/opensource/actions-speak-louder-than-words.svelte";
+  import CardSmall from "../../components/card/card-small.svelte";
 </script>
 
 <OpenGraph
@@ -55,7 +55,14 @@
   title="Open source is in our DNA"
   text="Gitpod is open-source and so are all the tools we develop and contribute to."
 >
-  <Resources {cards} slot="content" />
+  <div
+    class="flex flex-wrap justify-center mt-small max-w-5xl mx-auto"
+    slot="content"
+  >
+    {#each cards as card}
+      <CardSmall class="m-macro px-xx-small" {card} />
+    {/each}
+  </div>
 </SectionCommon>
 
 <ActionsSpeakLouderThanWords />
